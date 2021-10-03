@@ -6,3 +6,22 @@
       el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${e.clientX - r.left}; --y:${e.clientY - r.top};`
   })
 })
+
+function openDrop(el){
+  el.classList.toggle('active')
+}
+
+window.addEventListener('click', function(e){
+  if(e.target.classList.contains('header__location-li')){
+    this.document.querySelector('.header__location-btn').classList.remove('active')
+  }
+})
+
+var swiper = new Swiper(".header-carousel", {
+  slidesPerView: "auto",
+  spaceBetween: 0,
+  freeMode: 'true',
+  pagination: {
+    clickable: true
+  }
+});
