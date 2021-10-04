@@ -1,0 +1,117 @@
+.footer {
+    background: #292929;
+    color: #fff;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 80px 0 80px 0;
+    }
+
+    &__left {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    &__list {
+        list-style-type: none;
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+
+    &__li {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        width: 200px;
+        display: block;
+        font-size: 15px;
+        line-height: 18px;
+        color: #F3F3F3;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    &__right {
+        &-link{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            color: #F3F3F3;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            i{
+                width: 16px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__p{
+        font-size: 15px;
+        line-height: 18px;
+        color: #888888;
+        margin-bottom: 20px;
+    }
+
+    &__icons{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        a{
+            color: #fff;
+            font-size: 25px;
+            &:not(:last-child){
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #3A404B;
+        padding: 30px 0 30px 0;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            i {
+                margin-right: 18px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+        }
+    }
+}

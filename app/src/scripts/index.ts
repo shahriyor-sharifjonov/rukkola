@@ -1,3 +1,29 @@
+// Header Menu
+const headerButton: HTMLButtonElement = document.querySelector(".header__button");
+const headerMenu: HTMLUListElement = document.querySelector(".header__mob-menu");
+const body :HTMLElement = document.querySelector('body');
+let menuOpened = false;
+const menuToggle = () => {
+  menuOpened = !menuOpened;
+  headerButton.classList.toggle("open");
+  headerMenu.classList.toggle("open");
+  checkMenu()
+};
+
+function checkMenu(){
+  if menuOpened body.classList.add('overflow-hidden') else body.classList.remove('overflow-hidden')
+}
+headerButton.onclick = menuToggle;
+
+window.onclick = (e: MouseEvent) => {
+  if (
+    menuOpened &&
+    !e.composedPath().includes(headerButton) &&
+    !e.composedPath().includes(headerMenu)
+  )
+    menuToggle();
+};
+
 [].map.call(document.querySelectorAll('[anim="ripple"]'), el=> {
   el.addEventListener('click',e => {
       e = e.touches ? e.touches[0] : e;
@@ -11,7 +37,7 @@ function openDrop(el){
   el.classList.toggle('active')
 }
 
-window.addEventListener('click', function(e){
+window.addEventListener('click', function(e:any){
   if(e.target.classList.contains('header__location-li')){
     this.document.querySelector('.header__location-btn').classList.remove('active')
   }
