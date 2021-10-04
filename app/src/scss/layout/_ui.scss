@@ -49,6 +49,12 @@ body{
 }
 .main{
   flex: 1;
+  &.fixed{
+    margin-top: 158px;
+    @include media(992){
+      margin-top: 0;
+    }
+  }
 }
 button{
   font-family: inherit;

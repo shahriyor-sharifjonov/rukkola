@@ -15,48 +15,49 @@ mixin header()
                     a(href="tel:+84952551213").header__top-link.strong +8 (495) 255-12-13
                     a(href="#!").header__top-link.strong Статус заказа
                     a(href="#!" anim="ripple").btn.header__top-btn Войти 
-        nav.header__nav.container 
-            .header__left
-                .header__logo 
-                    a(href="index.html").header__logo-link
-                        img(src="images/logo.png" alt="") 
-                    p.header__logo-p Доставка цветов<br>по всей России
-                .header__location
-                    button(type="button" onclick="openDrop(this)").header__location-btn
-                        i.fal.fa-map-marker-alt
-                        | Москва
-                        i.fas.fa-angle-down
-                    ul.header__location-list 
-                        li.header__location-li Белгород
-                        li.header__location-li Владивосток
-                        li.header__location-li Волгоград
-                        li.header__location-li Воронеж
-                        li.header__location-li Екатеринбург
-                        li.header__location-li Иркутск
-                        li.header__location-li Калининград
-                        li.header__location-li Краснодар
-                        li.header__location-li Красноярск
-                        li.header__location-li Москва
-                        li.header__location-li Нижний Новгород
-                        li.header__location-li Новосибирск
-                        li.header__location-li Омск
-                        li.header__location-li Ростов-на-Дону
-                        li.header__location-li Рязань
-                        li.header__location-li Самара
-                        li.header__location-li Санкт-Петербург
-                        li.header__location-li Сочи
-                        li.header__location-li Ульяновск
-            .header__right 
-                form(action="").header__search
-                    input(type="text" placeholder="Какой букет нужен?").header__search-input
-                    button(type="submit").header__search-btn.fal.fa-search
-                button(type="button").header__fav.fal.fa-heart
-                .header__cart 
-                    i.fal.fa-shopping-bag 
-                    p 1480₽ 
-                button.header__button 
-                    span.header__button-line
-        nav.header__bottom 
+        .header__nav.sticky 
+            .container 
+                .header__left
+                    .header__logo 
+                        a(href="index.html").header__logo-link
+                            img(src="images/logo.png" alt="") 
+                        p.header__logo-p Доставка цветов<br>по всей России
+                    .header__location
+                        button(type="button" onclick="openDrop(this)").header__location-btn
+                            i.fal.fa-map-marker-alt
+                            | Москва
+                            i.fas.fa-angle-down
+                        ul.header__location-list 
+                            li.header__location-li Белгород
+                            li.header__location-li Владивосток
+                            li.header__location-li Волгоград
+                            li.header__location-li Воронеж
+                            li.header__location-li Екатеринбург
+                            li.header__location-li Иркутск
+                            li.header__location-li Калининград
+                            li.header__location-li Краснодар
+                            li.header__location-li Красноярск
+                            li.header__location-li Москва
+                            li.header__location-li Нижний Новгород
+                            li.header__location-li Новосибирск
+                            li.header__location-li Омск
+                            li.header__location-li Ростов-на-Дону
+                            li.header__location-li Рязань
+                            li.header__location-li Самара
+                            li.header__location-li Санкт-Петербург
+                            li.header__location-li Сочи
+                            li.header__location-li Ульяновск
+                .header__right 
+                    form(action="").header__search
+                        input(type="text" placeholder="Какой букет нужен?").header__search-input
+                        button(type="submit").header__search-btn.fal.fa-search
+                    button(type="button").header__fav.fal.fa-heart
+                    .header__cart 
+                        i.fal.fa-shopping-bag 
+                        p 1480₽ 
+                    button.header__button 
+                        span.header__button-line
+        .header__bottom.sticky 
             .container
                 .swiper.header-carousel 
                     .header-carousel__wrapper.swiper-wrapper   
@@ -282,7 +283,7 @@ mixin header()
                                     a(href="#!").header-carousel-link Тюльпаны  
                                     a(href="#!").header-carousel-link Тюльпаны  
                                     a(href="#!").header-carousel-link Тюльпаны  
-        .header__mob-menu 
+        .header__mob-menu.sticky
             .container
                 ul.header__mob-menu__list.main 
                     li.header__mob-menu__li 
