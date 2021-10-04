@@ -1,5 +1,8 @@
 .header {
   background: #fff;
+  position: sticky;
+  top: 0;
+  padding-bottom: 30px;
 
   &__top {
     display: flex;
