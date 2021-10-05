@@ -45,6 +45,68 @@ html(lang="en")
                                     img(src="images/stars.svg", alt="stars").stars__img
                                     p.stars__p 4.9
                                 a(href="reviews.html").reviews-text 42 отзыва
+                            p.desc Букет ярких тюльпанов будет отличным подарком как на праздник, так и просто порадовать девушку
+                            form(action="").form
+                                .form__widget
+                                    p.form__title Размер букета: 
+                                    .form__items 
+                                        .form__item 
+                                            input(type="radio", name="size").form__item-chk
+                                            .form__item-content 30х30
+                                        .form__item 
+                                            input(type="radio", name="size" checked).form__item-chk
+                                            .form__item-content 40х40
+                                        .form__item 
+                                            input(type="radio", name="size").form__item-chk
+                                            .form__item-content 50х50
+                                .form__widget
+                                    p.form__title Состав букета:
+                                    p.form__text 50 красных тюльпанов
+                                    p.form__text 51 белых тюльпанов 
+                                    p.form__text Картоная упаковка + ленточка
+                                    p.form__text Зелень
+                                .form__widget
+                                    p.form__title Оформление заказа
+                                    p.form__subtitle Высота тюльпанов:
+                                    .form__items 
+                                        .form__item 
+                                            input(type="radio", name="sizesm").form__item-chk
+                                            .form__item-content 30 см
+                                        .form__item 
+                                            input(type="radio", name="sizesm" checked).form__item-chk
+                                            .form__item-content 50 см
+                                        .form__item 
+                                            input(type="radio", name="sizesm").form__item-chk
+                                            .form__item-content 60 см
+                                .form__widget
+                                    p.form__subtitle Упаковка:
+                                    .form__items 
+                                        .form__item 
+                                            input(type="radio", name="package" checked).form__item-chk
+                                            .form__item-content Ленточка
+                                        .form__item 
+                                            input(type="radio", name="package").form__item-chk
+                                            .form__item-content Крафт (290₽)
+                                        .form__item 
+                                            input(type="radio", name="package").form__item-chk
+                                            .form__item-content Корейская (390₽) 
+                                        .form__item 
+                                            input(type="radio", name="package").form__item-chk
+                                            .form__item-content Премиум (490₽)
+                                        .form__item 
+                                            input(type="radio", name="package").form__item-chk
+                                            .form__item-content Корзинка (1000₽)
+                                .form__widget
+                                    p.form__subtitle Дополнительная зелень:
+                                    .form__items 
+                                        .form__item 
+                                            input(type="radio", name="dop").form__item-chk
+                                            .form__item-content Нет
+                                        .form__item 
+                                            input(type="radio", name="dop" checked).form__item-chk
+                                            .form__item-content Да (200₽)
+
+
 
                                 
             include components/footer.pug 
