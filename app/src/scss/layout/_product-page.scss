@@ -1,0 +1,126 @@
+.product-page {
+
+    .wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        @include media(992) {
+            flex-direction: column;
+        }
+    }
+
+    .content{
+
+        .title{
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 32px;
+            color: #222222;
+        }
+
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-bottom: 30px;
+
+        @include media(1200) {
+            max-width: 400px;
+        }
+
+        @include media(992) {
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        &__thumb {
+            width: 100%;
+            aspect-ratio: 1/1;
+
+            .swiper-wrapper {
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+
+            .swiper-slide {
+                width: 100%;
+                aspect-ratio: 1/1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .swiper-pagination {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: -10px;
+
+                @include media(992){
+                    display: flex;
+                }
+
+                &-bullet {
+                    width: 17px;
+                    height: 4px;
+                    background: #CDCDCD;
+
+                    @include media(576){
+                        width: 12px;
+                        height: 2px;
+                    }
+
+                    &:not(:last-child){
+                        margin-right: 7px;
+
+                        @include media(576){
+                            margin-right: 3px;
+                        }
+                    }
+
+                    &-active{
+                        background: #76A135;
+                    }
+                }
+
+            }
+
+        }
+
+        &__main {
+            margin-top: 20px;
+
+            @include media(992) {
+                display: none;
+            }
+
+            .swiper-wrapper {
+                justify-content: space-between;
+            }
+
+            .swiper-slide {
+                width: 130px;
+                aspect-ratio: 1/1;
+
+                &:not(:last-child) {
+                    margin-right: 17px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+}

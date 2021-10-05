@@ -455,7 +455,7 @@
             &:nth-child(1),
             &:nth-child(2) {
                 .header-carousel__content {
-                    left: 0;
+                    left: -1px;
                 }
             }
 
@@ -470,7 +470,7 @@
             &:nth-child(6),
             &:nth-child(5) {
                 .header-carousel__content {
-                    right: 0;
+                    right: -2px;
                 }
             }
 

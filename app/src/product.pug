@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="styles/all.min.css")
+        link(rel="stylesheet" href="styles/index.css")
+    body
+        .wrapper
+            include components/header.pug 
+            +header 
+            main.main.sticky 
+                include components/pagination.pug 
+                +pagination('Букет 101 тюльпан') 
+                .product-page
+                    .wrap.container 
+                        .carousel
+                            .carousel__thumb.swiper(thumbsSlider="")
+                                .swiper-wrapper 
+                                    .swiper-slide
+                                        img(src="images/slider-1.png", alt="")
+                                    .swiper-slide
+                                        img(src="images/slider-2.png", alt="")
+                                    .swiper-slide
+                                        img(src="images/slider-3.png", alt="")
+                                    .swiper-slide
+                                        img(src="images/slider-4.png", alt="")
+                                .swiper-pagination
+                            .carousel__main.swiper
+                                .swiper-wrapper 
+                                    .swiper-slide
+                                        img(src="images/slider-1.png", alt="")
+                                    .swiper-slide
+                                        img(src="images/slider-2.png", alt="")
+                                    .swiper-slide
+                                        img(src="images/slider-3.png", alt="")
+                                    .swiper-slide
+                                        img(src="images/slider-4.png", alt="")
+                        .content 
+                            h2.title Букет «101 тюльпан»
+                            .stars      
+                                
+            include components/footer.pug 
+            +footer 
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+        script(src="scripts/index.js") 

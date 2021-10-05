@@ -64,3 +64,20 @@ $(window).scroll(function(){
   if (scroll >= stickyOffset) sticky.addClass('fixed');
   else sticky.removeClass('fixed');
 });
+
+var swiper2 = new Swiper(".carousel__main", {
+  spaceBetween: 0,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper3 = new Swiper(".carousel__thumb", {
+  spaceBetween: 4,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  thumbs: {
+    swiper: swiper2,
+  },
+});
