@@ -40,7 +40,12 @@ html(lang="en")
                                         img(src="images/slider-4.png", alt="")
                         .content 
                             h2.title Букет «101 тюльпан»
-                            .stars      
+                            .row 
+                                .stars
+                                    img(src="images/stars.svg", alt="stars").stars__img
+                                    p.stars__p 4.9
+                                a(href="reviews.html").reviews-text 42 отзыва
+
                                 
             include components/footer.pug 
             +footer 

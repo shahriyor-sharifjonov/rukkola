@@ -17,6 +17,33 @@
             font-size: 26px;
             line-height: 32px;
             color: #222222;
+            margin-bottom: 14px;
+        }
+
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .stars{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-right: 15px;
+
+            &__p{
+                font-size: 12px;
+                line-height: 15px;
+                color: #343434;
+                margin-left: 12px;
+            }
+        }
+
+        .reviews-text{
+            font-size: 12px;
+            line-height: 15px;
+            color: #9F9F9F;
         }
 
     }
