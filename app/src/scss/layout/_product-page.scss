@@ -109,6 +109,7 @@
                 box-sizing: border-box;
                 position: relative;
                 margin-bottom: 8px;
+                cursor: pointer;
 
                 &:not(:last-child) {
                     margin-right: 8px;
@@ -121,6 +122,7 @@
                     top: 0;
                     left: 0;
                     opacity: 0;
+                    cursor: pointer;
 
                     &:checked~.form__item-content {
                         background: #76A135;
@@ -233,6 +235,7 @@
             .swiper-slide {
                 width: 130px;
                 aspect-ratio: 1/1;
+                cursor: pointer;
 
                 &:not(:last-child) {
                     margin-right: 17px;

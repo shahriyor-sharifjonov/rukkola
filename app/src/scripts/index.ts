@@ -73,6 +73,7 @@ var swiper2 = new Swiper(".carousel__main", {
 });
 var swiper3 = new Swiper(".carousel__thumb", {
   spaceBetween: 4,
+  grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
