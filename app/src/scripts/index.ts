@@ -82,3 +82,21 @@ var swiper3 = new Swiper(".carousel__thumb", {
     swiper: swiper2,
   },
 });
+
+$(document).ready(function() {
+  $(".accordeon__item > button").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".accordeon__content ")
+        .slideUp(200);
+    } else {
+      $(".accordeon__item > button").removeClass("active");
+      $(this).addClass("active");
+      $(".accordeon__content ").slideUp(200);
+      $(this)
+        .siblings(".accordeon__content ")
+        .slideDown(200);
+    }
+  });
+});

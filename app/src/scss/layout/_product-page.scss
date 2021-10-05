@@ -213,21 +213,66 @@
 
     }
 
+    .accordeon {
+
+        &.active {
+
+            .accordeon__content {
+                display: block;
+            }
+
+        }
+
+        &__item {
+            border-bottom: 1px solid #CDCDCD;
+        }
+
+        &__btn{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 32px;
+            color: #000000;
+            padding-right: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            &.active i{
+                transform: rotate(-180deg);
+            }
+
+            i{
+                transition: 200ms ease-in-out;
+            }
+        }
+
+        &__content {
+            display: none;
+            padding-bottom: 30px;
+        }
+
+    }
+
     .carousel {
         display: flex;
         flex-direction: column;
-        max-width: 550px;
-        width: 100%;
+        min-width: 550px;
+        width: 550px;
         overflow: hidden;
         margin-right: 50px;
         margin-bottom: 30px;
 
         @include media(1200) {
-            max-width: 400px;
+            min-width: 400px;
+            width: 400px;
         }
 
         @include media(992) {
-            max-width: 100%;
+            min-width: 100%;
+            width: 100%;
             margin-right: 0;
         }
 

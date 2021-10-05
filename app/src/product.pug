@@ -111,7 +111,46 @@ html(lang="en")
                                         button(type='submit' anim='ripple').btn.form__btn Добавить в корзину
                                         button(type='submit' anim='ripple').form__btn.pending Купить в 1 клик
                                         button(type='button').form__btn.fal.fa-heart.heart
-
+                            .accordeon 
+                                .accordeon__item
+                                    button(type='button').accordeon__btn Описание 
+                                        i.fas.fa-angle-down
+                                    .accordeon__content 
+                                        p.accordeon__p Букет свежих тюльпанов разного цвета. 101 отборный тюльпан с доставкой. Флористы соберут букет из свежих разноцветных тюльпанов с упаковкой или без, можем сделать в корзине. К цветам добавим конверт с запиской для получателя <br><br> Все цветы собраны на личной плантации и сразу привезены к вам. Ни один цветок не может завять во время поездки. При получении бракованого товара обратитесь к нашей службе поддержки через телефон указаный вверху сайта
+                                .accordeon__item
+                                    button(type='button').accordeon__btn Оплата и доставка
+                                        i.fas.fa-angle-down
+                                    .accordeon__content 
+                                        p.accordeon__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur repudiandae consequatur ab distinctio molestias perspiciatis quas ad consectetur aperiam debitis! Laudantium ex expedita eum? Consequuntur unde cupiditate quas non qui?
+                                .accordeon__item
+                                    button(type='button').accordeon__btn Отзывы
+                                        i.fas.fa-angle-down
+                                    .accordeon__content 
+                                        .review 
+                                            .review__header
+                                                p.review__title Виталий Сердов
+                                                .stars 
+                                                    img(src="images/stars.svg", alt="stars").stars__img
+                                                    p.stars__p 8 Июня 2021
+                                                p.review__p Просто шик. Всё просто и эллегантно, оличное оформление, отличный сервис. Доставка быстрая и всё прям то, что нужно 
+                                        .review 
+                                            .review__header
+                                                p.review__title Маргарита
+                                                .stars 
+                                                    img(src="images/stars.svg", alt="stars").stars__img
+                                                    p.stars__p 11 Марта 2021
+                                                p.review__p Очень хороший букет. Понравилось всё, от оформления и до доставки. Букетик красивый, свежий) Мама осталась довольна. Огромное спасибо магазину и курьеру в том числе)
+                                        .review 
+                                            .review__header
+                                                p.review__title Сергей
+                                                .stars 
+                                                    img(src="images/stars.svg", alt="stars").stars__img
+                                                    p.stars__p 22 апреля 2021
+                                                p.review__p Самая лучшая доставка цветов в России. Заказывал цветы в разных магазинах и всё время было что-то не так. Здесь уже заказываю 5 раз, и всё на высшем уровне.
+                                        .review-footer 
+                                            p.review-footer__p +437 отзывов
+                                            a(href="reviews.html").review-footer__link Читать все отзывы
+                                                i.fas.fa-arrow-right  
 
                                 
             include components/footer.pug 
