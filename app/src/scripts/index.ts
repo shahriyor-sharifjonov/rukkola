@@ -11,7 +11,10 @@ const menuToggle = () => {
 };
 
 function checkMenu(){
-  if menuOpened body.classList.add('overflow-hidden') else body.classList.remove('overflow-hidden')
+  if (menuOpened) 
+    body.classList.add('overflow-hidden'); 
+  else 
+    body.classList.remove('overflow-hidden');
 }
 headerButton.onclick = menuToggle;
 
