@@ -393,6 +393,7 @@
             top: 98px;
             left: 0;
             width: 100%;
+            z-index: 20;
             @include media(992){
                 position: relative;
                 top: 0;
@@ -491,6 +492,7 @@
             padding: 20px 0 20px 10px;
             max-height: 600px;
             box-shadow: 0 0 10px #00000020;
+            z-index: 20;
         }
 
         &__col {

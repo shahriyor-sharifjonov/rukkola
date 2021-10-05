@@ -1,109 +1,23 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
-    link(rel="stylesheet", href="styles/all.min.css")
-    link(rel="stylesheet", href="styles/index.css")
-  body
-    .wrapper
-      include components/header.pug 
-      +header 
-      main.main.sticky 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-        p main 
-      include components/footer.pug 
-      +footer 
-    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
-    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
-    script(src="scripts/index.js") 
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="styles/all.min.css")
+        link(rel="stylesheet" href="styles/index.css")
+    body
+        .wrapper
+            include components/header.pug 
+            +header 
+            main.main.sticky 
+                include components/pagination.pug 
+                +pagination 
+                include components/products.pug 
+                +products 
+            include components/footer.pug 
+            +footer 
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+        script(src="scripts/index.js") 

@@ -1,0 +1,20 @@
+.pagination{
+    margin-bottom: 20px;
+    .wrap{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__link{
+        font-size: 13px;
+        line-height: 16px;
+        color: #343434;
+        &_light{
+            color: #AAAAAA;
+        }
+    }
+    &__icon{
+        margin: 0 14px 0 14px;
+        font-size: 8px;
+    }
+}
