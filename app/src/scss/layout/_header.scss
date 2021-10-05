@@ -565,7 +565,8 @@
         overflow-y: auto;
         transform: translateX(100%);
         padding-bottom: 30px;
-        display: none;
+        display: none;   
+        z-index: 30;
 
         &.fixed{
             top: 98px;

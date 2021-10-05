@@ -13,7 +13,6 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        max-width: 336px;
         width: 25%;
         padding: 15px 15px 20px 15px;
         margin: -15px -15px 20px -15px;
@@ -23,24 +22,40 @@
         transform: scale(1);
         position: relative;
 
-        @media(hover: hover){
-            &:hover{
-                box-shadow: 0px 5px 10px 0px #DDDDDD;
-                transform: scale(1.05);
-                z-index: 1;
-    
-                .product__preview-btn{
-                    opacity: 1;
-                    visibility: visible;  
-                }
-    
-                .product__hidden{
-                    display: flex;
-                    opacity: 1;
-                    visibility: visible;  
-                    box-shadow: 0px 5px 10px 0px #DDDDDD;
-                }
+        @include media(992){
+            width: calc(50% - 10px);
+            margin: 0 0 20px 0;
+            padding: 0;
+            &:nth-child(odd){
+                margin-right: 10px;
             }
+        }
+
+        @media(hover: hover){
+
+            &:hover{
+                
+                @media (min-width: 992px){
+                    box-shadow: 0px 5px 10px 0px #DDDDDD;
+                    transform: scale(1.05);
+                    z-index: 1;
+                    
+                    .product__preview-btn{
+                        opacity: 1;
+                        visibility: visible;  
+                    }
+
+                    .product__hidden{
+                        display: flex;
+                        opacity: 1;
+                        visibility: visible;  
+                        box-shadow: 0px 5px 10px 0px #DDDDDD;
+                    }
+
+                }
+
+            }
+
         }
 
         &_new{
@@ -61,6 +76,11 @@
               align-items: center;
               justify-content: center;
               color: #FFFFFF;
+
+              @include media(768){
+                    top: 12px;
+                    left: 12px;
+              }
             }
         }
 
@@ -82,6 +102,11 @@
               align-items: center;
               justify-content: center;
               color: #FFFFFF;
+
+              @include media(768){
+                    top: 12px;
+                    left: 12px;
+              }
             }
         }
 
@@ -94,6 +119,10 @@
             aspect-ratio: 1/1;
             position: relative;
             overflow: hidden;
+
+            @include media(992){
+              border-radius: 10px;
+            }
 
             &-img{
                 position: absolute;
@@ -122,6 +151,12 @@
             opacity: 0;
             visibility: hidden;  
             transition:  200ms ease-in-out;
+
+            @include media(1200){
+                font-size: 12px;
+                line-height: 15px;
+                padding: 10px 20px;
+            }
         }
 
         &__content{
@@ -133,6 +168,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                position: relative;
             }
 
         }
@@ -142,11 +178,27 @@
             font-size: 16px;
             line-height: 20px;
             color: #343434;            
+
+            @include media(1200){
+                font-size: 12px;
+                line-height: 15px;
+            }
         }
 
         &__heart{
             font-size: 25px;
             color: #343434;
+
+            @include media(992){
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                right: 0;
+                top: -30px;
+                background:  #fff;
+                font-size: 18px;
+                border-radius: 10px 0 0 0;
+            }
         }
 
         &__stars{
@@ -154,6 +206,10 @@
             justify-content: flex-start;
             align-items: center;
             margin-bottom: 25px;
+
+            @include media(992){
+                display: none;
+            }
 
             &-img{
                 margin-right: 20px;
@@ -173,24 +229,47 @@
             align-items: flex-end;
             justify-content: flex-start;
 
+            @include media(992){
+                margin-top: 10px;
+            }
+
             &-p{
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 24px;
                 color: #343434;
                 margin-right: 12px;
+
+                @include media(768){
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
 
             &-text{
                 font-size: 12px;
                 line-height: 15px;
                 color: #C8C8C8;   
+
+                @include media(1200){
+                  display: none;
+                }
                 
                 &_line{
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 22px;
                     text-decoration-line: line-through;
+
+                    @include media(1200){
+                        display: block;
+                      }
+
+                      @include media(768){
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
                 }
 
             }
