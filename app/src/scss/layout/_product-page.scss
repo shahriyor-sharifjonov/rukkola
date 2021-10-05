@@ -11,6 +11,7 @@
     }
 
     .content {
+        margin-bottom: 50px;
 
         .title {
             font-weight: 600;
@@ -84,16 +85,16 @@
                 align-items: center;
                 justify-content: flex-start;
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     margin-bottom: 15px;
                 }
 
-                &::before{
-                  content: '';
-                  width: 15px;
-                  height: 1px;
-                  background: #343434;
-                  margin-right: 5px;
+                &::before {
+                    content: '';
+                    width: 15px;
+                    height: 1px;
+                    background: #343434;
+                    margin-right: 5px;
                 }
 
             }
@@ -140,6 +141,72 @@
                     border: 1px solid #CDCDCD;
                     transition: 200ms ease;
                 }
+            }
+
+            &__footer {
+                padding: 50px 0 50px 0;
+                border-top: 1px solid #CDCDCD;
+                border-bottom: 1px solid #CDCDCD;
+
+                @include media(576){
+                    padding: 40px 0 10px 0;
+                    border-bottom: none;
+                }
+            }
+
+            &__price {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 49px;
+                color: #343434;
+                margin-bottom: 25px;
+            }
+
+            &__btns {
+                display: flex;
+                align-items: stretch;
+                justify-content: flex-start;
+                height: 50px;
+            }
+
+            &__btn {
+                border-radius: 0;
+
+                @include media(576){
+                    padding: 0 10px !important;
+                }
+
+                &:first-of-type {
+                    @include media(576){
+                        margin-right: 8px !important;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 8px;
+
+                    @include media(576){
+                        margin-right: 0;
+                    }
+                }
+
+                &.pending {
+                    background: #F5F5F5;
+                    padding: 0 30px 0 30px;
+                    color: #343434;
+                }
+
+                &.heart {
+                    width: 50px;
+                    background: #F5F5F5;
+                    color: #343434;
+                    font-size: 18px;
+
+                    @include media(576){
+                        display: none;
+                    }
+                }
+
             }
 
         }
