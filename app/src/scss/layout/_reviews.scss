@@ -1,0 +1,225 @@
+.reviews {
+    margin-bottom: 100px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 32px;
+        color: #222222;
+        margin-bottom: 14px;
+        margin-bottom: 20px;
+
+        @include media(768) {
+            display: none;
+        }
+
+        &_mob {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 32px;
+            color: #222222;
+            margin-bottom: 14px;
+            margin-bottom: 20px;
+            display: none;
+
+            @include media(768) {
+                display: flex;
+            }
+        }
+    }
+
+    &__back {
+        width: 35px;
+        height: 35px;
+        background: #E9E9E9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 20px;
+        font-size: 12px;
+        color: #343434;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 22px;
+        color: #343434;
+        margin-bottom: 43px;
+
+        @include media(768) {
+            display: none;
+        }
+    }
+
+    &-row {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__star {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 30px;
+
+        &-p {
+            font-size: 36px;
+            color: #313131;
+            font-weight: 600;
+            margin-right: 10px;
+
+            @include media(768) {
+                font-size: 16px;
+                order: 1;
+                margin-left: 10px;
+                margin-right: 0;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .stars {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 15px;
+
+        &__p {
+            font-size: 12px;
+            line-height: 15px;
+            color: #343434;
+            margin-left: 12px;
+        }
+    }
+
+    .star {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
+
+    .reviews__item {
+        margin: 20px 0 0 0;
+        padding-bottom: 20px;
+        // border-bottom: 1px solid #e6e6e6;
+    }
+
+    &__avatar{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    &__more{
+        width: 100%;
+        height: 55px;
+        background: #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #343434;
+        margin-top: 20px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    .review {
+        max-width: 450px;
+        margin-bottom: 40px;
+
+        &__header {
+            margin-bottom: 23px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+        }
+
+        &__title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #343434;
+            margin-bottom: 11px;
+        }
+
+        &__p {
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+        }
+
+        &-footer {
+
+            &__p {
+                font-size: 12px;
+                line-height: 15px;
+                color: #B8B8B8;
+            }
+
+            &__link {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #76A135;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                i {
+                    margin-left: 12px;
+                }
+            }
+        }
+
+    }
+
+    &-col {
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include media(768) {
+            display: none;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 500;
+
+            &.color {
+                color: #76A135;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__imgs{
+        margin-top: 15px;
+        @include media(768){
+            display: none;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+}

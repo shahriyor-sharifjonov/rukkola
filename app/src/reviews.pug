@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="styles/all.min.css")
+        link(rel="stylesheet" href="styles/index.css")
+    body
+        .wrapper
+            include components/header.pug 
+            +header 
+            main.main.sticky 
+                include components/pagination.pug 
+                +pagination('Букет 101 тюльпан') 
+                .reviews 
+                    .reviews__body.container 
+                        h2.reviews__title_mob 
+                            a(href="index.html").reviews__back.fas.fa-angle-left 
+                            | Отзывы 
+                        h2.reviews__title Отзывы о ''Rukkola Flowers''
+                        p.reviews__desc Последние отзывы о компании  "Руккола" (rukkola-flowers.ru). Клиенты нашей доставки цветов - о своих впечатлениях.
+                        .reviews-row
+                            .reviews__star
+                                p.reviews__star-p 4.9 
+                                .reviews__stars 
+                                    img(src="images/star.svg", alt="")
+                                    img(src="images/star.svg", alt="")
+                                    img(src="images/star.svg", alt="")
+                                    img(src="images/star.svg", alt="")
+                                    img(src="images/star.svg", alt="")
+                            .reviews-col 
+                                p 
+                                    span.color 25 215
+                                    span Оценок
+                            .reviews-col 
+                                p 
+                                    span.color 25 215
+                                    span Отзывов
+                            .reviews-col 
+                                p 
+                                    span.color 433 928
+                                    span Заказов
+                        button(type='button' anim='ripple').btn.reviews__btn Оставить отзыв
+                        .reviews__item 
+                            .review__header
+                                img(src="images/avatar.png", alt="").reviews__avatar
+                                .reviews__header-content
+                                    p.review__title Виталий Сердов
+                                    .stars 
+                                        .star 
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                        p.stars__p 8 Июня 2021
+                            p.review__p Заказал для близкой подруги и ее мамы композицию из орхидей в подарочной корзинке. Сюрприз удался, цветы оказались прекрасными и свежими. Прошло уже две недели с момента доставки орхидей, а они до сих пор радуют близких мне людей! ...
+                            .reviews__imgs 
+                                img(src="images/slider-1.png", alt="")
+                                img(src="images/slider-2.png", alt="")
+                                img(src="images/slider-3.png", alt="")
+                                img(src="images/slider-4.png", alt="")
+                        .reviews__item 
+                            .review__header
+                                img(src="images/avatar.png", alt="").reviews__avatar
+                                .reviews__header-content
+                                    p.review__title Виктор Тихановский
+                                    .stars 
+                                        .star 
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                            img(src="images/star.svg", alt="")
+                                        p.stars__p 8 Июня 2021
+                            p.review__p Заказал для близкой подруги и ее мамы композицию из орхидей в подарочной корзинке. Сюрприз удался, цветы оказались прекрасными и свежими. Прошло уже две недели с момента доставки орхидей, а они до сих пор радуют близких мне людей! ...
+                        button(type='button' anim='ripple').btn.reviews__more Показать ещё
+            include components/footer.pug 
+            +footer 
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+        script(src="scripts/index.js") 
