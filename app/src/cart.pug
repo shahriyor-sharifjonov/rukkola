@@ -17,8 +17,52 @@ html(lang="en")
                 .cart 
                     .cart__wrap.container 
                         .cart__main
+                            .cart__title Корзина
+                            .cart__item 
+                                img(src="images/cart-1.png", alt="flower").cart__item-img
+                                .cart__item-content 
+                                    p.cart__item-title Букет 101 тюльпан
+                                    p.cart__item-price 11700 ₽
+                                .cart__item-quatinity 
+                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-left
+                                    input(type="text" value="1" disabled).cart__item-quatinity-input
+                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-right
+                                p.cart__item-total-price 11700 ₽
+                                button(type='button').cart__item-btn.fas.fa-times
+                            .cart__item 
+                                img(src="images/cart-2.png", alt="flower").cart__item-img
+                                .cart__item-content 
+                                    p.cart__item-title Букет розовых и белых роз
+                                    p.cart__item-price 6900 ₽
+                                .cart__item-quatinity 
+                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-left
+                                    input(type="text" value="2" disabled).cart__item-quatinity-input
+                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-right
+                                p.cart__item-total-price 13800 ₽
+                                button(type='button').cart__item-btn.fas.fa-times
                         .cart__aside
-                            p.cart__aside-title Ваш заказ
+                            .cart__aside-item
+                                p.cart__aside-title Ваш заказ
+                                .cart__aside-row.border
+                                    p.cart__aside-text Стоимость товаров
+                                    p.cart__aside-price 25500 ₽
+                                .cart__aside-row
+                                    p.cart__aside-text Доставка курьером
+                                    p.cart__aside-price 199 ₽
+                                .cart__aside-row
+                                    p.cart__aside-text Начислено бонусов
+                                    p.cart__aside-price 500 ₽
+                                .cart__aside-row.border.mt-60
+                                    p.cart__aside-text Оплата при получении
+                                .cart__aside-row
+                                    p.cart__aside-text Итого <span>2 товара</span>
+                                    p.cart__aside-price 25699 ₽
+                                button(type='button' anim='ripple').cart__aside-btn.btn Оформить заказ
+                                p.cart__aside-p Нажимая на кнопку я соглашаюсь  с правилами использования моих <a href="#!">персональных данных</a>
+                            .cart__aside-item.cart__aside-item_row
+                                p.cart__aside-title Промокод
+                                a(href="#!").cart__aside-link Добавить 
+
             include components/footer.pug 
             +footer 
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
