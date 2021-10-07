@@ -55,6 +55,14 @@ var swiper = new Swiper(".header-carousel", {
   }
 });
 
+var swiper4 = new Swiper(".cart-carousel", {
+  slidesPerView: "auto",
+  spaceBetween: 0,
+  pagination: {
+    clickable: true
+  }
+});
+
 var stickyOffset = $('.sticky').offset().top;
 
 $(window).scroll(function(){
@@ -100,3 +108,4 @@ $(document).ready(function() {
     }
   });
 });
+
