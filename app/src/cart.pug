@@ -20,26 +20,61 @@ html(lang="en")
                             .cart__title Корзина
                             .cart__item 
                                 img(src="images/cart-1.png", alt="flower").cart__item-img
-                                .cart__item-content 
-                                    p.cart__item-title Букет 101 тюльпан
-                                    p.cart__item-price 11700 ₽
-                                .cart__item-quatinity 
-                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-left
-                                    input(type="text" value="1" disabled).cart__item-quatinity-input
-                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-right
-                                p.cart__item-total-price 11700 ₽
-                                button(type='button').cart__item-btn.fas.fa-times
+                                .cart__item-mob
+                                    .cart__item-content 
+                                        p.cart__item-title Букет 101 тюльпан
+                                        p.cart__item-price 11700 ₽
+                                    .cart__item-quatinity 
+                                        button(type='button').cart__item-quatinity-btn.fas.fa-angle-left
+                                        input(type="text" value="1" disabled).cart__item-quatinity-input
+                                        button(type='button').cart__item-quatinity-btn.fas.fa-angle-right
+                                .cart__item-mob2
+                                    p.cart__item-total-price 11700 ₽
+                                    button(type='button').cart__item-btn.fas.fa-times
                             .cart__item 
                                 img(src="images/cart-2.png", alt="flower").cart__item-img
-                                .cart__item-content 
-                                    p.cart__item-title Букет розовых и белых роз
-                                    p.cart__item-price 6900 ₽
-                                .cart__item-quatinity 
-                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-left
-                                    input(type="text" value="2" disabled).cart__item-quatinity-input
-                                    button(type='button').cart__item-quatinity-btn.fas.fa-angle-right
-                                p.cart__item-total-price 13800 ₽
-                                button(type='button').cart__item-btn.fas.fa-times
+                                .cart__item-mob
+                                    .cart__item-content 
+                                        p.cart__item-title Букет розовых и белых роз
+                                        p.cart__item-price 6900 ₽
+                                    .cart__item-quatinity 
+                                        button(type='button').cart__item-quatinity-btn.fas.fa-angle-left
+                                        input(type="text" value="2" disabled).cart__item-quatinity-input
+                                        button(type='button').cart__item-quatinity-btn.fas.fa-angle-right
+                                .cart__item-mob2
+                                    p.cart__item-total-price 13800 ₽
+                                    button(type='button').cart__item-btn.fas.fa-times                           
+                            p.cart__orders-title Добавить к заказу
+                            .cart__orders.swiper
+                                .cart__orders-wrap.swiper-wrapper
+                                    .cart__order.active.swiper-slide 
+                                        img(src="images/order.png", alt="").cart__order-img
+                                        .cart__order-content 
+                                            p.cart__order-title Конфеты Raffaelo
+                                            p.cart__order-price 550 ₽
+                                        button(type="button").cart__order-btn
+                                            i.fas.fa-plus                                  
+                                    .cart__order.swiper-slide 
+                                        img(src="images/order.png", alt="").cart__order-img
+                                        .cart__order-content 
+                                            p.cart__order-title Конфеты Raffaelo большая коробка
+                                            p.cart__order-price 700 ₽
+                                        button(type="button").cart__order-btn
+                                            i.fas.fa-plus
+                                    .cart__order.swiper-slide
+                                        img(src="images/order.png", alt="").cart__order-img
+                                        .cart__order-content 
+                                            p.cart__order-title Конфеты Raffaelo большая коробка
+                                            p.cart__order-price 700 ₽
+                                        button(type="button").cart__order-btn
+                                            i.fas.fa-plus
+                                    .cart__order.swiper-slide
+                                        img(src="images/order.png", alt="").cart__order-img
+                                        .cart__order-content 
+                                            p.cart__order-title Конфеты Raffaelo большая коробка
+                                            p.cart__order-price 700 ₽
+                                        button(type="button").cart__order-btn
+                                            i.fas.fa-plus
                         .cart__aside
                             .cart__aside-item
                                 p.cart__aside-title Ваш заказ
