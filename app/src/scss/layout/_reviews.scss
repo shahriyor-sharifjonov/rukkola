@@ -1,6 +1,49 @@
 .reviews {
     margin-bottom: 100px;
 
+    &__body{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__aside{
+        min-width: 250px;
+        margin-right: 50px;
+        @include media(992){
+            display: none;
+        }
+        &-link{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 15px;
+            margin-top: -1px;
+            border-top: 1px solid #CDCDCD;
+            border-bottom: 1px solid #CDCDCD;
+            font-size: 14px;
+            line-height: 17px;
+            color: #343434;
+            &.active{
+                background: #76A135;
+                color: #fff;
+                svg{
+                    *{
+                        fill: white;
+                    }
+                }
+            }
+            svg{
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                *{
+                    fill: #343434;
+                }
+            }
+        }
+    }
+
     &__title {
         font-weight: 600;
         font-size: 26px;
