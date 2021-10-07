@@ -310,8 +310,8 @@
     }
 
     &__aside {
-        max-width: 300px;
-        width: 100%;
+        min-width: 300px;
+        width: 300px;
         position: sticky;
         top: 160px;
         padding-bottom: 50px;
