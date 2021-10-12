@@ -83,11 +83,24 @@ var swiper3 = new Swiper(".carousel__thumb", {
   spaceBetween: 4,
   grabCursor: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".carousel__thumb-pagination",
     clickable: true,
   },
   thumbs: {
     swiper: swiper2,
+  },
+});
+
+var swiper5 = new Swiper(".main-carousel", {
+  slidesPerView: 1,
+  grabCursor: true,
+  pagination: {
+    el: ".main-carousel__pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".main-carousel-btn-next",
+    prevEl: ".main-carousel-btn-prev",
   },
 });
 
