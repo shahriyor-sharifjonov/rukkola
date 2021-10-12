@@ -1,0 +1,10 @@
+mixin sub()
+    .sub
+        form(action="").sub__body.container 
+            h3.sub__title Подписаться на скидки и акции 
+            .sub__content 
+                .sub__content-header 
+                    input(type="email" placeholder="Ваш E-mail" id="email" required).sub__input 
+                    label(for="email").sub__label Мы присылаем письма не чаще 1 раза в месяц 
+                p.sub__p Нажимая кнопку "Подписаться", вы соглашаетесь с правилами <a href="privacy.html" target="_blank">Политики конфиденциальности</a> 
+            button(type="submit" anim='ripple').btn.sub__btn Подписаться 

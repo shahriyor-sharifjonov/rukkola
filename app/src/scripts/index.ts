@@ -104,6 +104,19 @@ var swiper5 = new Swiper(".main-carousel", {
   },
 });
 
+
+var swiper6 = new Swiper(".reviews-carousel", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  grabCursor: true,
+  breakpoints: {
+    1400: {
+      slidesPerView: 3,
+    }
+  }
+});
+
+
 $(document).ready(function() {
   $(".accordeon__item > button").on("click", function() {
     if ($(this).hasClass("active")) {
