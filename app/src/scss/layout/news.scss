@@ -1,6 +1,122 @@
 .news {
     margin-bottom: 150px;
 
+    &__item {
+        padding: 30px 0 30px 0;
+        border-bottom: 1px solid #CDCDCD;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        column-gap: 30px;
+
+        @include media(576){
+            column-gap: 12px;
+        }
+
+        &-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+
+            @include media(576){
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #343434;     
+            margin-bottom: 10px;
+
+            @include media(576){
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+        }
+
+        &-p {
+            font-size: 15px;
+            line-height: 18px;
+            color: #343434;   
+            margin-bottom: 30px;
+            
+            @include media(576){
+                font-size: 13px;
+                line-height: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        &-date {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            @include media(576){
+                display: none;
+            }
+
+        }
+
+        &-small {
+            font-size: 12px;
+            line-height: 15px;
+            color: #AAAAAA;            
+        }
+
+        &-sep {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: #C4C4C4;
+            margin: 0 12px;
+        }
+
+    }
+
+    &__more-btn {
+        width: 100%;
+        height: 55px;
+        background: #F5F5F5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 36px;
+        color: #7D7D7D;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        column-gap: 22px;
+
+        &-link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+        }
+    }
+
     &__carousel {
 
         &-item {
@@ -38,7 +154,7 @@
             @include media(576){
                 font-size: 10px;
             }
-            
+
         }
 
         &-title {

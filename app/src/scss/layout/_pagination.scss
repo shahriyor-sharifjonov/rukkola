@@ -1,6 +1,10 @@
 .pagination {
     margin-bottom: 30px;
 
+    @include media(576){
+        display: none;
+    }
+
     .wrap {
         display: flex;
         justify-content: flex-start;
