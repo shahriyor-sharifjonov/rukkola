@@ -445,7 +445,6 @@ mixin reviews()
             .products__col 
                 p.products__desc Отзывы
                 p.products__title О нас говорят многие клиенты
-            a(href="catalog.html").products__link Смотреть весь каталог 
         .container
             .reviews-carousel.swiper
                 .wrap.swiper-wrapper
@@ -515,3 +514,26 @@ mixin reviews()
             .reviews__btns
                 a(href="#!" anim='ripple').reviews__link Оставить отзыв
                 button(type="button" anim='ripple').reviews__more-btn Показать ещё
+
+
+mixin news()
+    .news 
+        .news__body.container
+            .products__header
+                .products__col 
+                    p.products__desc Новости
+                    p.products__title Недавное из нашей жизни
+            .news__carousel.swiper 
+                .news__carousel-wrapper.swiper-wrapper
+                    .news__carousel-item.swiper-slide
+                        img(src="images/news-1.png", alt="").news__carousel-img
+                        p.news__carousel-desc Доставка
+                        p.news__carousel-title Доставляем наши букеты прямо на Олимпиаду 2020 в Токио
+                    .news__carousel-item.swiper-slide
+                        img(src="images/news-2.png", alt="").news__carousel-img
+                        p.news__carousel-desc О нас
+                        p.news__carousel-title Первое место в рейтинге лучшиих поставщиков букетов по Москве
+                    .news__carousel-item.swiper-slide
+                        img(src="images/news-3.png", alt="").news__carousel-img
+                        p.news__carousel-desc О нас
+                        p.news__carousel-title Розыгрыш на доставку бесплатного букета завершился

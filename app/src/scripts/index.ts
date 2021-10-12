@@ -116,6 +116,17 @@ var swiper6 = new Swiper(".reviews-carousel", {
   }
 });
 
+var swiper6 = new Swiper(".news__carousel", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  grabCursor: true,
+  breakpoints: {
+    1400: {
+      slidesPerView: 3,
+    }
+  }
+});
+
 
 $(document).ready(function() {
   $(".accordeon__item > button").on("click", function() {

@@ -6,6 +6,11 @@
         align-items: flex-start;
         justify-content: space-between;
         column-gap: 100px;
+
+        @include media(992){
+            flex-direction: column;
+        }
+
     }
 
     &__content {
@@ -19,6 +24,11 @@
         font-size: 18px;
         color: #000000;
 
+        @include media(578){
+            font-size: 14px;
+            line-height: 24px;
+        }
+
         &:not(:last-child){
             margin-bottom: 20px;
         }
@@ -28,6 +38,11 @@
     &__img{
         max-width: 40%;
         width: 100%;
+
+        @include media(992){
+            max-width: 100%;
+            margin-top: 50px;
+        }
     }
 
 }
