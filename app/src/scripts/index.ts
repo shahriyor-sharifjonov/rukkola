@@ -146,3 +146,20 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $(".orders-item > .orders-item__header").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".orders-item__content")
+        .slideUp(200);
+    } else {
+      $(".orders-item > .orders-item__header").removeClass("active");
+      $(this).addClass("active");
+      $(".orders-item__content").slideUp(200);
+      $(this)
+        .siblings(".orders-item__content")
+        .slideDown(200);
+    }
+  });
+});
