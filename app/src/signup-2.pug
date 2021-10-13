@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="styles/all.min.css")
+        link(rel="stylesheet" href="styles/index.css")
+    body
+        .signup2.login
+            .container 
+                a(href="index.html").login-logo
+                    img(src="images/logo-2.png" alt="")
+                form(action="signup-2.html").login__content
+                    h3.login__title Регистрация
+                    p.login__desc Уже есть аккаунт?
+                    a(href="login.html").login__link Войти 
+                    p.login__bad Вы неправильно ввели почту или пароль
+                    .login__get
+                        input(type="email" placeholder="Ваш пароль" required).login__input
+                    .login__get
+                        input(type="text" placeholder="Повторить пароль" required).login__input
+                        button(type='button').fas.fa-eye-slash.login__eye
+                    button(type="submit" anim='ripple').login__btn.small Зарегистрировать учетную запись
+                    p.login__or Или
+                    a(href="#!" anim='ripple').login__external.google
+                        img(src="images/google.svg" alt="") 
+                        | Продолжить с Google
+                    a(href="#!" anim='ripple').login__external.facebook
+                        img(src="images/facebook.svg" alt="") 
+                        | Продолжить с Facebook
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+        script(src="scripts/index.js") 

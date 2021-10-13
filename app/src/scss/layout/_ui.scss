@@ -332,6 +332,9 @@ a {
         line-height: 24px;
         color: #FFFFFF;
         margin-bottom: 20px;
+        &.small {
+            font-size: 16px;
+        }
     }
 
     &__or {
@@ -375,4 +378,12 @@ a {
 
     }
 
+}
+
+.signup {
+    background: url('../images/signup-1.png') center / cover no-repeat;
+}
+
+.signup2 {
+    background: url('../images/signup-2.png') center / cover no-repeat;
 }
