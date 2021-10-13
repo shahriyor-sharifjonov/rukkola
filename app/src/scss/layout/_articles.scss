@@ -1,0 +1,37 @@
+.articles {
+    &__title {
+        @include media(576){
+            font-size: 18px;
+            line-height: 120%;
+        }
+    }
+    &__date {
+        font-size: 12px;
+        line-height: 15px;
+        color: #AAAAAA;
+        margin-bottom: 15px;
+    }
+    &__desc{
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #343434;
+    }
+    &__img{
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__btn {
+        background: #76A135;
+        padding: 14px 30px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        border-radius: 25px;
+    }
+}
