@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="styles/all.min.css")
+        link(rel="stylesheet" href="styles/index.css")
+    body
+        .login
+            .container 
+                a(href="index.html").login-logo
+                    img(src="images/logo-2.png", alt="")
+                form(action="").login__content
+                    h3.login__title Войти
+                    p.login__desc Новый пользователь?
+                    a(href="signup.html").login__link Создать учетную запись 
+                    .login__get
+                        input(type="email" placeholder="Ваш e-mail").login__input
+                        button(type='button').fas.fa-eye-slash.login__eye
+                    .login__get
+                        input(type="text" placeholder="Ваш пароль").login__input
+                        button(type='button').fas.fa-eye-slash.login__eye
+                    a(href="#!").login__link.mb-30 Забыли пароль? 
+                    button(type="submit" anim='ripple').login__btn Войти
+                    p.login__or Или
+                    a(href="#!" anim='ripple').login__external.google
+                        img(src="images/google.svg", alt="") 
+                        | Продолжить с Google
+                    a(href="#!" anim='ripple').login__external.facebook
+                        img(src="images/facebook.svg", alt="") 
+                        | Продолжить с Facebook
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+        script(src="scripts/index.js") 
