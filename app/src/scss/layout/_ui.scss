@@ -256,6 +256,12 @@ a {
         line-height: 39px;
         color: #343434;
         margin-bottom: 30px;
+
+        &.white {
+            @include media(992){
+                color: #fff;
+            }
+        }
     }
 
     &__desc {
@@ -264,6 +270,16 @@ a {
         line-height: 22px;
         color: #343434;
         margin-bottom: 10px;
+
+        &.white {
+            @include media(992){
+                color: #fff;
+            }
+        }
+
+        &.mb-50 {
+            margin-bottom: 50px;
+        }
     }
 
     &__link {
@@ -276,6 +292,20 @@ a {
         &.mb-30 {
             margin-bottom: 30px;
         }
+    }
+
+    &__info {
+        width: 100%;
+        background: #eaf4db;
+        border: 2px solid #ABDC61;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 20px;
+        color: #343434;
+        margin-bottom: 35px;
     }
 
     &__get {
@@ -332,6 +362,9 @@ a {
         line-height: 24px;
         color: #FFFFFF;
         margin-bottom: 20px;
+        &.mt-10 {
+            margin-top: 10px;
+        }
         &.small {
             font-size: 16px;
             @include media(576){
@@ -381,6 +414,24 @@ a {
 
     }
 
+    &__back {
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+
+        &.white {
+            @include media(992){
+                color: #fff;
+            }
+        }
+        i{
+            margin-right: 20px;
+        }
+    }
+
 }
 
 .signup {
@@ -389,4 +440,16 @@ a {
 
 .signup2 {
     background: url('../images/signup-2.png') center / cover no-repeat;
+}
+
+.pass-1 {
+    background: url('../images/pass-1.png') center / cover no-repeat;
+}
+
+.pass-2 {
+    background: url('../images/pass-2.png') center / cover no-repeat;
+}
+
+.pass-3 {
+    background: url('../images/pass-3.png') center / cover no-repeat;
 }

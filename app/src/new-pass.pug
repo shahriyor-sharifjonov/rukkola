@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="styles/all.min.css")
+        link(rel="stylesheet" href="styles/index.css")
+    body
+        .login.pass-3
+            .container 
+                a(href="index.html").login-logo
+                    img(src="images/logo-2.png" alt="")
+                form(action="pass-mail.html").login__content
+                    h3.login__title Востановление пароля
+                    p.login__desc.mb-50 Создайте новый пароль, который вы не использовали на других сайтах
+                    p.login__bad Вы неправильно ввели почту или пароль
+                    .login__get
+                        input(type="text" placeholder="Новый пароль" required).login__input
+                        button(type='button').fas.fa-eye-slash.login__eye
+                    .login__get
+                        input(type="text" placeholder="Повторите пароль" required).login__input
+                        button(type='button').fas.fa-eye-slash.login__eye
+                    button(type="submit" anim='ripple').login__btn.mt-10 Войти с новым паролем
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+        script(src="scripts/index.js") 

@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="styles/all.min.css")
+        link(rel="stylesheet" href="styles/index.css")
+    body
+        .login.pass-2
+            .container 
+                a(href="pass-recovery.html").login-logo
+                    img(src="images/logo-2.png" alt="")
+                form(action="").login__content
+                    h3.login__title Востановление пароля
+                    .login__info 
+                        p.login__info-p Мы выслали вам на указаную почту инструкцию по востановлению и изменению пароля
+                    a(href="login.html").login__back.white
+                        i.fas.fa-long-arrow-alt-left
+                        | Назад
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+        script(src="https://code.jquery.com/jquery-3.4.1.min.js") 
+        script(src="scripts/index.js") 
