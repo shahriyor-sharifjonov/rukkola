@@ -1,21 +1,947 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><link rel="stylesheet" href="styles/all.min.css"><link rel="stylesheet" href="styles/index.css"></head><body><div class="wrapper"><header class="header"> <nav class="header__top">  <div class="header__top-body container"><ul class="header__top-left"><li class="header__top-li"> <a class="header__top-link" href="#!">О магазине</a></li><li class="header__top-li"> <a class="header__top-link" href="#!">Доставка </a></li><li class="header__top-li"> <a class="header__top-link" href="#!">Оплата</a></li><li class="header__top-li"> <a class="header__top-link" href="#!">Отзывы</a></li></ul><div class="header__top-right"><a class="header__top-link strong" href="tel:+84952551213">+8 (495) 255-12-13</a><a class="header__top-link strong" href="#!">Статус заказа</a><a class="btn header__top-btn" href="#!" anim="ripple">Войти </a></div></div></nav><div class="header__nav sticky"> <div class="container"> <div class="header__left"><div class="header__logo"> <a class="header__logo-link" href="index.html"><img src="images/logo.png" alt=""></a><p class="header__logo-p">Доставка цветов<br>по всей России</p></div><div class="header__location"><button class="header__location-btn" type="button" onclick="openDrop(this)"><i class="fal fa-map-marker-alt"></i>Москва<i class="fas fa-angle-down"></i></button><ul class="header__location-list"> <li class="header__location-li">Белгород</li><li class="header__location-li">Владивосток</li><li class="header__location-li">Волгоград</li><li class="header__location-li">Воронеж</li><li class="header__location-li">Екатеринбург</li><li class="header__location-li">Иркутск</li><li class="header__location-li">Калининград</li><li class="header__location-li">Краснодар</li><li class="header__location-li">Красноярск</li><li class="header__location-li">Москва</li><li class="header__location-li">Нижний Новгород</li><li class="header__location-li">Новосибирск</li><li class="header__location-li">Омск</li><li class="header__location-li">Ростов-на-Дону</li><li class="header__location-li">Рязань</li><li class="header__location-li">Самара</li><li class="header__location-li">Санкт-Петербург</li><li class="header__location-li">Сочи</li><li class="header__location-li">Ульяновск</li></ul></div></div><div class="header__right"> <form class="header__search" action=""><input class="header__search-input" type="text" placeholder="Какой букет нужен?"><button class="header__search-btn fal fa-search" type="submit"></button></form><button class="header__fav fal fa-heart" type="button"></button><a class="header__cart" href="cart.html"> <i class="fal fa-shopping-bag"> </i><p>1480₽ </p></a><button class="header__button"> <span class="header__button-line"></span></button></div></div></div><div class="header__bottom sticky"> <div class="container"><div class="swiper header-carousel"> <div class="header-carousel__wrapper swiper-wrapper">  <div class="header-carousel__item swiper-slide"> <p class="header-carousel-p">1 Сентября  </p><div class="header-carousel__content"> <div class="header-carousel__col"><p class="header-carousel__col-title">По составу </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"><p class="header-carousel__col-title"> </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"> <p class="header-carousel__col-title">По типу</p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div></div></div><div class="header-carousel__item swiper-slide"> <p class="header-carousel-p">День рождение  </p><div class="header-carousel__content"> <div class="header-carousel__col"><p class="header-carousel__col-title">По составу </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"><p class="header-carousel__col-title"> </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"> <p class="header-carousel__col-title">По типу</p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div></div></div><div class="header-carousel__item swiper-slide"> <p class="header-carousel-p">Букеты  </p><div class="header-carousel__content"> <div class="header-carousel__col"><p class="header-carousel__col-title">По составу </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"><p class="header-carousel__col-title"> </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"> <p class="header-carousel__col-title">По типу</p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div></div></div><div class="header-carousel__item swiper-slide"> <p class="header-carousel-p">Розы </p><div class="header-carousel__content"> <div class="header-carousel__col"><p class="header-carousel__col-title">По составу </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"><p class="header-carousel__col-title"> </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"> <p class="header-carousel__col-title">По типу</p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div></div></div><div class="header-carousel__item swiper-slide"> <p class="header-carousel-p">Цветы  </p><div class="header-carousel__content"> <div class="header-carousel__col"><p class="header-carousel__col-title">По составу </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"><p class="header-carousel__col-title"> </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"> <p class="header-carousel__col-title">По типу</p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div></div></div><div class="header-carousel__item swiper-slide"> <p class="header-carousel-p">Монобукеты  </p><div class="header-carousel__content"> <div class="header-carousel__col"><p class="header-carousel__col-title">По составу </p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div><div class="header-carousel__col"> <p class="header-carousel__col-title">По типу</p><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a><a class="header-carousel-link" href="#!">Тюльпаны  </a></div></div></div></div></div></div></div><div class="header__mob-menu sticky"><div class="container"><ul class="header__mob-menu__list main"> <li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Каталог товаров</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Личный кабинет</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">О компании</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Акции</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Отзывы</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Контакты</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Новости</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Доставка и оплата</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Гарантия</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link" href="#!">Понравившееся</a></li></ul><ul class="header__mob-menu__list"> <li class="header__mob-menu__title">Василий Ливиненко</li><li class="header__mob-menu__li"> <a class="header__mob-menu__link small" href="#!">Личные данные </a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link small" href="#!">Понравившееся</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link small" href="#!">Бонусы</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link small" href="#!">Мои отзывы</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link small" href="#!">Контакты</a></li></ul><ul class="header__mob-menu__list"> <li class="header__mob-menu__title">Другое</li><li class="header__mob-menu__li"> <a class="header__mob-menu__link small" href="#!">О нас</a></li><li class="header__mob-menu__li"> <a class="header__mob-menu__link small" href="#!">Мои заказы</a></li></ul></div></div></header><main class="main sticky"> <div class="pagination"> <div class="wrap container"> <a class="pagination__link not-main" href="index.html">Главная</a><i class="fas fa-angle-right pagination__icon not-main"> </i><a class="pagination__link not-main" href="index.html">Букеты</a><i class="fas fa-angle-right pagination__icon not-main"> </i><a class="pagination__link pagination__link_light not-main" href="#!">Букет 101 тюльпан</a></div></div><div class="cart"> <div class="cart__wrap container"> <div class="cart__main"><h2 class="reviews__title_mob"> <a class="reviews__back fas fa-angle-left" href="index.html"> </a>Корзина </h2><h2 class="reviews__title">Корзина</h2><div class="cart__item"> <img class="cart__item-img" src="images/cart-1.png" alt="flower"><div class="cart__item-mob"><div class="cart__item-content"> <p class="cart__item-title">Букет 101 тюльпан</p><p class="cart__item-price">11700 ₽</p></div><div class="cart__item-quatinity"> <button class="cart__item-quatinity-btn fas fa-angle-left" type="button"></button><input class="cart__item-quatinity-input" type="text" value="1" disabled><button class="cart__item-quatinity-btn fas fa-angle-right" type="button"></button></div></div><div class="cart__item-mob2"><p class="cart__item-total-price">11700 ₽</p><button class="cart__item-btn fas fa-times" type="button"></button></div></div><div class="cart__item"> <img class="cart__item-img" src="images/cart-2.png" alt="flower"><div class="cart__item-mob"><div class="cart__item-content"> <p class="cart__item-title">Букет розовых и белых роз</p><p class="cart__item-price">6900 ₽</p></div><div class="cart__item-quatinity"> <button class="cart__item-quatinity-btn fas fa-angle-left" type="button"></button><input class="cart__item-quatinity-input" type="text" value="2" disabled><button class="cart__item-quatinity-btn fas fa-angle-right" type="button"></button></div></div><div class="cart__item-mob2"><p class="cart__item-total-price">13800 ₽</p><button class="cart__item-btn fas fa-times" type="button">                          </button></div></div><p class="cart__orders-title">Добавить к заказу</p><div class="cart__orders"><div class="cart__orders-wrap"><div class="cart__order active"><img class="cart__order-img" src="images/order.png" alt=""><div class="cart__order-content"> <p class="cart__order-title">Конфеты Raffaelo</p><p class="cart__order-price">550 ₽</p></div><button class="cart__order-btn" type="button"><i class="fas fa-plus">                                 </i></button></div><div class="cart__order"><img class="cart__order-img" src="images/order.png" alt=""><div class="cart__order-content"> <p class="cart__order-title">Конфеты Raffaelo большая коробка</p><p class="cart__order-price">700 ₽</p></div><button class="cart__order-btn" type="button"><i class="fas fa-plus"></i></button></div><div class="cart__order"><img class="cart__order-img" src="images/order.png" alt=""><div class="cart__order-content"> <p class="cart__order-title">Конфеты Raffaelo большая коробка</p><p class="cart__order-price">700 ₽</p></div><button class="cart__order-btn" type="button"><i class="fas fa-plus"></i></button></div><div class="cart__order"><img class="cart__order-img" src="images/order.png" alt=""><div class="cart__order-content"> <p class="cart__order-title">Конфеты Raffaelo большая коробка</p><p class="cart__order-price">700 ₽</p></div><button class="cart__order-btn" type="button"><i class="fas fa-plus"></i></button></div></div></div><form class="cart__form container" action=""><p class="cart__form-title">Адрес доставки</p><div class="cart__form-row mb-40"><div class="cart__form-chk"><input class="cart__form-chk-input" type="checkbox" id="form-chk"><span class="cart__form-chk-span"></span></div><label class="cart__form-label" for="form-chk">У меня частный дом </label></div><div class="cart__inputs"> <div class="cart__inputs-sm mb-10"><input class="cart__form-input" type="text" placeholder="Город доставки"></div><div class="cart__inputs-bg"><input class="cart__form-input" type="text" placeholder="Адрес доставки"></div></div><div class="cart__inputs three"> <div class="cart__inputs-sm"><input class="cart__form-input" type="text" placeholder="Этаж, №"></div><div class="cart__inputs-bg"><input class="cart__form-input" type="text" placeholder="Квартира"><input class="cart__form-input ml-20" type="text" placeholder="Подъезд, №"></div></div><input class="cart__form-input" type="text" placeholder="Коментарий к заказу"><a class="cart__form-link" href="#!">Уточнить место доставки с курьером </a><p class="cart__form-title">Дата и время доставки </p><div class="cart__inputs"> <input class="cart__form-input mr-20" type="date" value="2021-09-19"><input class="cart__form-input" type="time" value="12:00"></div><div class="cart__form-row mb-20"></div><div class="cart__form-chk"><input class="cart__form-chk-input" type="checkbox" id="form-chk2"><span class="cart__form-chk-span"></span></div><label class="cart__form-label" for="form-chk2">Доставить как можно быстрее</label><p class="cart__form-p">Ваш заказ прибудет сегодня через 60 - 80 минут после подтверждения заказа</p><p class="cart__form-title">Способ оплаты</p><div class="cart-carousel swiper"> <div class="swiper-wrapper"> <div class="swiper-slide cart-carousel__item"><input class="cart-carousel__chk" type="radio" name="oplata" checked><div class="cart-carousel__bg"></div><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M32.4135 6.24098C31.986 5.73554 31.3872 5.42681 30.7274 5.3717L7.48846 3.43128C6.82859 3.37617 6.18702 3.58133 5.68152 4.00884C5.17808 4.43468 4.8698 5.03042 4.81295 5.687L4.34541 10.0734H2.47854C1.11188 10.0734 0 11.1853 0 12.5519V27.0991C0 28.4657 1.11188 29.5776 2.47854 29.5776H25.7984C27.1651 29.5776 28.277 28.4657 28.277 27.0991V24.7393L29.1045 24.8084C29.1743 24.8142 29.2437 24.8171 29.3126 24.8171C30.5867 24.8171 31.6728 23.8368 31.7807 22.5446L32.9912 8.04798C33.0463 7.38817 32.8411 6.74648 32.4135 6.24098ZM2.47854 11.3625H25.7984C26.4543 11.3625 26.988 11.8961 26.988 12.5519V13.8775H1.28906V12.5519C1.28906 11.8961 1.82266 11.3625 2.47854 11.3625ZM1.28906 15.1665H26.988V17.8406H1.28906V15.1665ZM25.7984 28.2886H2.47854C1.82266 28.2886 1.28906 27.755 1.28906 27.0991V19.1297H26.988V27.0991C26.988 27.755 26.4543 28.2886 25.7984 28.2886ZM31.7066 7.94066L30.4961 22.4373C30.4415 23.091 29.8653 23.5785 29.2118 23.5238L28.277 23.4457V12.5519C28.277 11.1853 27.1651 10.0734 25.7984 10.0734H5.64182L6.0955 5.81694C6.09602 5.81204 6.09647 5.80721 6.09686 5.80225C6.15145 5.14863 6.7274 4.66111 7.38121 4.71589L30.6202 6.65631C30.9369 6.68274 31.2243 6.83091 31.4294 7.07351C31.6346 7.31611 31.733 7.62401 31.7066 7.94066Z"/>
-<path d="M24.2907 21.0459H18.0876C17.7317 21.0459 17.4431 21.3345 17.4431 21.6904V25.7374C17.4431 26.0933 17.7317 26.3819 18.0876 26.3819H24.2907C24.6467 26.3819 24.9353 26.0933 24.9353 25.7374V21.6904C24.9353 21.3345 24.6467 21.0459 24.2907 21.0459ZM23.6462 25.0928H18.7322V22.335H23.6462V25.0928Z"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="33" height="33"/>
-</clipPath>
-</defs>
-</svg><p>Банковская карта</p></div><div class="swiper-slide cart-carousel__item"><input class="cart-carousel__chk" type="radio" name="oplata"><div class="cart-carousel__bg"></div><img src="images/google-pay.svg" alt="google-pay"><p>Google Pay</p></div><div class="swiper-slide cart-carousel__item"><input class="cart-carousel__chk" type="radio" name="oplata"><div class="cart-carousel__bg"></div><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M25.0001 21.6179L23.7266 20.855C23.3384 20.6228 22.8943 20.5002 22.442 20.5H20.5254C20.1331 20.4993 19.7425 20.5498 19.3631 20.6499L13.5887 22.2C12.9573 22.3743 12.4503 22.8445 12.2291 23.4609L7.14996 20.7131C6.73809 20.4788 6.25592 20.3992 5.79058 20.4885C5.61505 20.5195 5.44488 20.5754 5.28497 20.6545C4.92388 20.8274 4.62432 21.1067 4.42608 21.4546C4.25274 21.7576 4.16168 22.1006 4.16168 22.4495C4.15631 23.1619 4.53375 23.822 5.14996 24.179L14.253 29.6255C14.6485 29.8704 15.1041 30 15.5691 30H22.6141C22.9288 30.0003 23.2405 29.9407 23.533 29.825L25.0001 29.2456V30H30.0001V20H25.0001V21.6179ZM23.1656 28.895C22.9905 28.9641 22.8038 28.9998 22.6155 29H15.5691C15.2874 28.9998 15.0113 28.9204 14.7725 28.771L5.65704 23.3181C5.34722 23.1392 5.15753 22.8076 5.15997 22.45C5.1607 22.2747 5.20684 22.1023 5.294 21.95C5.39361 21.7773 5.54351 21.6389 5.72345 21.5535C5.80279 21.5149 5.88678 21.4876 5.97345 21.4724C6.03668 21.4607 6.10089 21.4546 6.1651 21.4546C6.33697 21.4541 6.50592 21.499 6.65509 21.5845L12.1627 24.5606C12.169 24.5911 12.169 24.6211 12.1771 24.6516C12.4139 25.5244 13.2056 26.1306 14.1102 26.1316C14.3885 26.1062 14.6641 26.0569 14.9341 25.9846L20.129 24.5945L19.8712 23.6284L14.6932 25.0125C14.4651 25.0649 14.171 25.125 14.1102 25.1301C13.6585 25.1309 13.2625 24.8291 13.1436 24.3936C13.1275 24.333 13.118 24.271 13.1146 24.2085C13.1146 24.2085 13.1107 24.0874 13.1146 24.0449C13.1526 23.6267 13.4456 23.2756 13.8502 23.1631L19.6221 21.6189C19.9168 21.54 20.2205 21.5 20.5254 21.5H22.442C22.7134 21.5 22.9798 21.5737 23.2125 21.7131L25.0001 22.7835V28.1699L23.1656 28.895ZM26.0001 21H29.0001V29H26.0001V21Z"/>
-<path d="M20.6221 3.99977L17.9399 1.31789C17.0979 0.470966 15.9521 -0.00364378 14.7581 -0.000225807H8.47192C8.08398 0.000262475 7.70142 0.0908386 7.354 0.26369L6.2334 0.824237C6.00879 0.937274 5.75928 0.991229 5.50806 0.98122L5 0.963397V-0.000225807H0V10.9998H5V9.49977H5.8501L6.15259 9.69973C6.99902 10.2617 7.98462 10.5791 9 10.6162V16.9998H30V3.99977H20.6221ZM4 9.99977H1V0.999774H4V9.99977ZM6.70605 8.86769L6.1499 8.49977H5V1.96389L5.47144 1.98073C5.89014 1.99562 6.30566 1.90554 6.68042 1.71877L7.80005 1.15822C8.00854 1.05397 8.23877 0.999774 8.47192 0.999774H14.7581C15.6868 0.997089 16.5781 1.36623 17.2329 2.02468L19.208 3.99977H15.082L13.8684 2.7864L13.1616 3.49318L16.6936 7.02541C17.0859 7.41603 17.0872 8.0508 16.6965 8.44338C16.3057 8.83571 15.6709 8.83693 15.2786 8.44631L12.3286 5.49636L11.9785 5.7964C11.012 6.61721 9.59912 6.6382 8.6084 5.84621L8.3186 5.61135L7.68848 6.3882L7.98145 6.62575C8.28784 6.87062 8.63184 7.06447 9 7.19973V9.61574C8.18164 9.57936 7.38843 9.32082 6.70605 8.86769ZM13.8186 8.39968L14.573 9.15431C15.3562 9.9258 16.6135 9.92702 17.3979 9.15676C16.6641 10.2932 16.9536 11.8057 18.0554 12.5906C19.1572 13.3755 20.6814 13.155 21.5156 12.0904C22.3499 11.0254 22.1992 9.49269 21.1733 8.61086C20.1477 7.72902 18.6096 7.80983 17.6821 8.79421C18.0237 8.25783 18.0847 7.58937 17.8459 6.99977H24.5415C24.7566 8.25783 25.7419 9.24318 27 9.45827V11.5413C25.7419 11.7564 24.7566 12.7417 24.5415 13.9998H14.4585C14.2434 12.7417 13.2581 11.7564 12 11.5413V9.45827C12.7146 9.33791 13.3608 8.96169 13.8186 8.39968ZM18 10.4998C18 9.6714 18.6716 8.99977 19.5 8.99977C20.3284 8.99977 21 9.6714 21 10.4998C21 11.3281 20.3284 11.9998 19.5 11.9998C18.6716 11.9998 18 11.3281 18 10.4998ZM29 15.9998H10V7.4092C10.7927 7.46877 11.583 7.26662 12.25 6.83425L13.103 7.68727C12.7278 8.19704 12.1331 8.49855 11.5 8.49977H11V12.4998H11.5C12.6045 12.4998 13.5 13.3953 13.5 14.4998V14.9998H25.5V14.4998C25.5 13.3953 26.3955 12.4998 27.5 12.4998H28V8.49977H27.5C26.3955 8.49977 25.5 7.60427 25.5 6.49977V5.99977H17.082L16.082 4.99977H29V15.9998Z"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="30" height="30"/>
-</clipPath>
-</defs>
-</svg><p>Наличными </p></div></div></div><p class="cart__form-title">Ваши данные </p><div class="cart__inputs"> <input class="cart__form-input mr-20" type="tel" placeholder="Ваш номер телефона"><input class="cart__form-input" type="email" placeholder="Ваш e-mail"></div><p class="cart__form-title">Контактные данные получателя </p><div class="cart__inputs cart__inputs_last"> <input class="cart__form-input" type="text" placeholder="Фамилия"><input class="cart__form-input" type="text" placeholder="Имя"><input class="cart__form-input" type="text" placeholder="Отчество"></div><button class="btn cart__form-btn" type="button" anim="ripple">Заказать на сумму 25 699 ₽         </button></form></div><div class="cart__aside"><div class="cart__aside-item"><p class="cart__aside-title">Ваш заказ</p><div class="cart__aside-row border"><p class="cart__aside-text">Стоимость товаров</p><p class="cart__aside-price">25500 ₽</p></div><div class="cart__aside-row"><p class="cart__aside-text">Доставка курьером</p><p class="cart__aside-price">199 ₽</p></div><div class="cart__aside-row"><p class="cart__aside-text">Начислено бонусов</p><p class="cart__aside-price">500 ₽</p></div><div class="cart__aside-row border mt-60"><p class="cart__aside-text">Оплата при получении</p></div><div class="cart__aside-row"><p class="cart__aside-text">Итого <span>2 товара</span></p><p class="cart__aside-price">25699 ₽</p></div><button class="cart__aside-btn btn" type="button" anim="ripple">Оформить заказ</button><p class="cart__aside-p">Нажимая на кнопку я соглашаюсь  с правилами использования моих <a href="#!">персональных данных</a></p></div><div class="cart__aside-item cart__aside-item_row"><p class="cart__aside-title">Промокод</p><a class="cart__aside-link" href="#!">Добавить </a></div></div></div></div></main><footer class="footer"><div class="footer__body container"> <div class="footer__row"><div class="footer__left"><ul class="footer__list"><li class="footer__title">О нас</li><li class="footer__li"><a class="footer__link" href="#!">О магазине</a></li><li class="footer__li"><a class="footer__link" href="#!">Доставка</a></li><li class="footer__li"><a class="footer__link" href="#!">Оплата</a></li><li class="footer__li"><a class="footer__link" href="#!">Гарантии</a></li><li class="footer__li"><a class="footer__link" href="#!">Новости</a></li><li class="footer__li"><a class="footer__link" href="#!">Отзывы</a></li></ul><ul class="footer__list"><li class="footer__title">Клиентам</li><li class="footer__li"><a class="footer__link" href="#!">Контакты</a></li><li class="footer__li">  <a class="footer__link" href="#!">Помощь</a></li><li class="footer__li"><a class="footer__link" href="#!">Политика конфиденциальности</a></li><li class="footer__li"><a class="footer__link" href="#!">Корпоративным клиентам</a></li><li class="footer__li"><a class="footer__link" href="#!">Оформление заказа</a></li></ul><ul class="footer__list"><li class="footer__title">Другое</li><li class="footer__li"><a class="footer__link" href="#!">Личный кабинет</a></li><li class="footer__li"><a class="footer__link" href="#!">Каталог</a></li><li class="footer__li"><a class="footer__link" href="#!">Живая лента</a></li><li class="footer__li"><a class="footer__link" href="#!">Понравишееся</a></li><li class="footer__li"><a class="footer__link" href="#!">Фотографии</a></li></ul></div><div class="footer__right"><p class="footer__title">Контакты</p><a class="footer__right-link" href="tel:+79000000000"> <i class="fas fa-phone-alt"> </i><p>+7 (900) 000-00-00 </p></a><p class="footer__p">Время работы: пн-вс с 10:00 до 19:00</p><a class="footer__right-link" href="#!"> <i class="fas fa-map-marker-alt"></i><p>г. Москва, ул. Улица, д. 1</p></a><a class="footer__right-link" href="mailto:something@gmail.com"> <i class="fal fa-envelope"></i><p>something@gmail.com </p></a><div class="footer__icons"> <a class="footer__icons-link fab fa-odnoklassniki-square" href="https://ok.ru/" target="_blank"></a><a class="footer__icons-link fab fa-facebook-square" href="https://facebook.com/" target="_blank"></a><a class="footer__icons-link fab fa-instagram-square" href="https://instagram.com/" target="_blank"></a><a class="footer__icons-link fab fa-youtube-square" href="https://youtube.com/" target="_blank"></a><a class="footer__icons-link fab fa-twitter-square" href="https://twitter.com/" target="_blank"></a><a class="footer__icons-link fab fa-pinterest-square" href="https://pinterest.com/" target="_blank"></a></div></div></div><div class="footer__bottom"><div class="footer__bottom-item"> <i class="fal fa-copyright"> </i><p>Все права защищены. Rukkola 2021</p></div><a class="footer__bottom-link" href="#!">Политика конфиденциальности  </a></div></div></footer></div><script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script><script src="https://code.jquery.com/jquery-3.4.1.min.js"> </script><script src="scripts/index.js"> </script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="header__top">
+          <div class="header__top-body container">
+            <ul class="header__top-left">
+              <li class="header__top-li">
+                <a class="header__top-link" href="#!">О магазине</a>
+              </li>
+              <li class="header__top-li">
+                <a class="header__top-link" href="#!">Доставка </a>
+              </li>
+              <li class="header__top-li">
+                <a class="header__top-link" href="#!">Оплата</a>
+              </li>
+              <li class="header__top-li">
+                <a class="header__top-link" href="#!">Отзывы</a>
+              </li>
+            </ul>
+            <div class="header__top-right">
+              <a class="header__top-link strong" href="tel:+84952551213"
+                >+8 (495) 255-12-13</a
+              ><a class="header__top-link strong" href="#!">Статус заказа</a
+              ><a class="btn header__top-btn" href="#!" anim="ripple">Войти </a>
+            </div>
+          </div>
+        </nav>
+        <div class="header__nav sticky">
+          <div class="container">
+            <div class="header__left">
+              <div class="header__logo">
+                <a class="header__logo-link" href="index.html"
+                  ><img src="images/logo.png" alt=""
+                /></a>
+                <p class="header__logo-p">
+                  Доставка цветов<br />по всей России
+                </p>
+              </div>
+              <div class="header__location">
+                <button
+                  class="header__location-btn"
+                  type="button"
+                  onclick="openDrop(this)"
+                >
+                  <i class="fal fa-map-marker-alt"></i>Москва<i
+                    class="fas fa-angle-down"
+                  ></i>
+                </button>
+                <ul class="header__location-list">
+                  <li class="header__location-li">Белгород</li>
+                  <li class="header__location-li">Владивосток</li>
+                  <li class="header__location-li">Волгоград</li>
+                  <li class="header__location-li">Воронеж</li>
+                  <li class="header__location-li">Екатеринбург</li>
+                  <li class="header__location-li">Иркутск</li>
+                  <li class="header__location-li">Калининград</li>
+                  <li class="header__location-li">Краснодар</li>
+                  <li class="header__location-li">Красноярск</li>
+                  <li class="header__location-li">Москва</li>
+                  <li class="header__location-li">Нижний Новгород</li>
+                  <li class="header__location-li">Новосибирск</li>
+                  <li class="header__location-li">Омск</li>
+                  <li class="header__location-li">Ростов-на-Дону</li>
+                  <li class="header__location-li">Рязань</li>
+                  <li class="header__location-li">Самара</li>
+                  <li class="header__location-li">Санкт-Петербург</li>
+                  <li class="header__location-li">Сочи</li>
+                  <li class="header__location-li">Ульяновск</li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__right">
+              <form class="header__search" action="">
+                <input
+                  class="header__search-input"
+                  type="text"
+                  placeholder="Какой букет нужен?"
+                /><button
+                  class="header__search-btn fal fa-search"
+                  type="submit"
+                ></button>
+              </form>
+              <button class="header__fav fal fa-heart" type="button"></button
+              ><a class="header__cart" href="cart.html">
+                <i class="fal fa-shopping-bag"> </i>
+                <p>1480₽</p></a
+              ><button class="header__button">
+                <span class="header__button-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom sticky">
+          <div class="container">
+            <div class="swiper header-carousel">
+              <div class="header-carousel__wrapper swiper-wrapper">
+                <div class="header-carousel__item swiper-slide">
+                  <p class="header-carousel-p">1 Сентября</p>
+                  <div class="header-carousel__content">
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По составу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title"></p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По типу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-carousel__item swiper-slide">
+                  <p class="header-carousel-p">День рождение</p>
+                  <div class="header-carousel__content">
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По составу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title"></p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По типу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-carousel__item swiper-slide">
+                  <p class="header-carousel-p">Букеты</p>
+                  <div class="header-carousel__content">
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По составу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title"></p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По типу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-carousel__item swiper-slide">
+                  <p class="header-carousel-p">Розы</p>
+                  <div class="header-carousel__content">
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По составу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title"></p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По типу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-carousel__item swiper-slide">
+                  <p class="header-carousel-p">Цветы</p>
+                  <div class="header-carousel__content">
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По составу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title"></p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По типу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-carousel__item swiper-slide">
+                  <p class="header-carousel-p">Монобукеты</p>
+                  <div class="header-carousel__content">
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По составу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                    <div class="header-carousel__col">
+                      <p class="header-carousel__col-title">По типу</p>
+                      <a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a
+                      ><a class="header-carousel-link" href="#!">Тюльпаны </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__mob-menu sticky">
+          <div class="container">
+            <ul class="header__mob-menu__list main">
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Каталог товаров</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Личный кабинет</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">О компании</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Акции</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Отзывы</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Контакты</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Новости</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!"
+                  >Доставка и оплата</a
+                >
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Гарантия</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link" href="#!">Понравившееся</a>
+              </li>
+            </ul>
+            <ul class="header__mob-menu__list">
+              <li class="header__mob-menu__title">Василий Ливиненко</li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link small" href="#!"
+                  >Личные данные
+                </a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link small" href="#!"
+                  >Понравившееся</a
+                >
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link small" href="#!">Бонусы</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link small" href="#!">Мои отзывы</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link small" href="#!">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header__mob-menu__list">
+              <li class="header__mob-menu__title">Другое</li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link small" href="#!">О нас</a>
+              </li>
+              <li class="header__mob-menu__li">
+                <a class="header__mob-menu__link small" href="#!">Мои заказы</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main class="main sticky">
+        <div class="pagination">
+          <div class="wrap container">
+            <a class="pagination__link not-main" href="index.html">Главная</a
+            ><i class="fas fa-angle-right pagination__icon not-main"> </i
+            ><a class="pagination__link not-main" href="index.html">Букеты</a
+            ><i class="fas fa-angle-right pagination__icon not-main"> </i
+            ><a
+              class="pagination__link pagination__link_light not-main"
+              href="#!"
+              >Букет 101 тюльпан</a
+            >
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart__wrap container">
+            <div class="cart__main">
+              <h2 class="reviews__title_mob">
+                <a class="reviews__back fas fa-angle-left" href="index.html">
+                </a
+                >Корзина
+              </h2>
+              <h2 class="reviews__title">Корзина</h2>
+              <div class="cart__item">
+                <img
+                  class="cart__item-img"
+                  src="images/cart-1.png"
+                  alt="flower"
+                />
+                <div class="cart__item-mob">
+                  <div class="cart__item-content">
+                    <p class="cart__item-title">Букет 101 тюльпан</p>
+                    <p class="cart__item-price">11700 ₽</p>
+                  </div>
+                  <div class="cart__item-quatinity">
+                    <button
+                      class="cart__item-quatinity-btn fas fa-angle-left"
+                      type="button"
+                    ></button
+                    ><input
+                      class="cart__item-quatinity-input"
+                      type="text"
+                      value="1"
+                      disabled
+                    /><button
+                      class="cart__item-quatinity-btn fas fa-angle-right"
+                      type="button"
+                    ></button>
+                  </div>
+                </div>
+                <div class="cart__item-mob2">
+                  <p class="cart__item-total-price">11700 ₽</p>
+                  <button
+                    class="cart__item-btn fas fa-times"
+                    type="button"
+                  ></button>
+                </div>
+              </div>
+              <div class="cart__item">
+                <img
+                  class="cart__item-img"
+                  src="images/cart-2.png"
+                  alt="flower"
+                />
+                <div class="cart__item-mob">
+                  <div class="cart__item-content">
+                    <p class="cart__item-title">Букет розовых и белых роз</p>
+                    <p class="cart__item-price">6900 ₽</p>
+                  </div>
+                  <div class="cart__item-quatinity">
+                    <button
+                      class="cart__item-quatinity-btn fas fa-angle-left"
+                      type="button"
+                    ></button
+                    ><input
+                      class="cart__item-quatinity-input"
+                      type="text"
+                      value="2"
+                      disabled
+                    /><button
+                      class="cart__item-quatinity-btn fas fa-angle-right"
+                      type="button"
+                    ></button>
+                  </div>
+                </div>
+                <div class="cart__item-mob2">
+                  <p class="cart__item-total-price">13800 ₽</p>
+                  <button
+                    class="cart__item-btn fas fa-times"
+                    type="button"
+                  ></button>
+                </div>
+              </div>
+              <p class="cart__orders-title">Добавить к заказу</p>
+              <div class="cart__orders">
+                <div class="cart__orders-wrap">
+                  <div class="cart__order active">
+                    <img
+                      class="cart__order-img"
+                      src="images/order.png"
+                      alt=""
+                    />
+                    <div class="cart__order-content">
+                      <p class="cart__order-title">Конфеты Raffaelo</p>
+                      <p class="cart__order-price">550 ₽</p>
+                    </div>
+                    <button class="cart__order-btn" type="button">
+                      <i class="fas fa-plus"> </i>
+                    </button>
+                  </div>
+                  <div class="cart__order">
+                    <img
+                      class="cart__order-img"
+                      src="images/order.png"
+                      alt=""
+                    />
+                    <div class="cart__order-content">
+                      <p class="cart__order-title">
+                        Конфеты Raffaelo большая коробка
+                      </p>
+                      <p class="cart__order-price">700 ₽</p>
+                    </div>
+                    <button class="cart__order-btn" type="button">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="cart__order">
+                    <img
+                      class="cart__order-img"
+                      src="images/order.png"
+                      alt=""
+                    />
+                    <div class="cart__order-content">
+                      <p class="cart__order-title">
+                        Конфеты Raffaelo большая коробка
+                      </p>
+                      <p class="cart__order-price">700 ₽</p>
+                    </div>
+                    <button class="cart__order-btn" type="button">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                  <div class="cart__order">
+                    <img
+                      class="cart__order-img"
+                      src="images/order.png"
+                      alt=""
+                    />
+                    <div class="cart__order-content">
+                      <p class="cart__order-title">
+                        Конфеты Raffaelo большая коробка
+                      </p>
+                      <p class="cart__order-price">700 ₽</p>
+                    </div>
+                    <button class="cart__order-btn" type="button">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <form class="cart__form container" action="">
+                <p class="cart__form-title">Адрес доставки</p>
+                <div class="cart__form-row mb-40">
+                  <div class="cart__form-chk">
+                    <input
+                      class="cart__form-chk-input"
+                      type="checkbox"
+                      id="form-chk"
+                    /><span class="cart__form-chk-span"></span>
+                  </div>
+                  <label class="cart__form-label" for="form-chk"
+                    >У меня частный дом
+                  </label>
+                </div>
+                <div class="cart__inputs">
+                  <div class="cart__inputs-sm mb-10">
+                    <input
+                      class="cart__form-input"
+                      type="text"
+                      placeholder="Город доставки"
+                    />
+                  </div>
+                  <div class="cart__inputs-bg">
+                    <input
+                      class="cart__form-input"
+                      type="text"
+                      placeholder="Адрес доставки"
+                    />
+                  </div>
+                </div>
+                <div class="cart__inputs three">
+                  <div class="cart__inputs-sm">
+                    <input
+                      class="cart__form-input"
+                      type="text"
+                      placeholder="Этаж, №"
+                    />
+                  </div>
+                  <div class="cart__inputs-bg">
+                    <input
+                      class="cart__form-input"
+                      type="text"
+                      placeholder="Квартира"
+                    /><input
+                      class="cart__form-input ml-20"
+                      type="text"
+                      placeholder="Подъезд, №"
+                    />
+                  </div>
+                </div>
+                <input
+                  class="cart__form-input"
+                  type="text"
+                  placeholder="Коментарий к заказу"
+                /><a class="cart__form-link" href="#!"
+                  >Уточнить место доставки с курьером
+                </a>
+                <p class="cart__form-title">Дата и время доставки</p>
+                <div class="cart__inputs">
+                  <input
+                    class="cart__form-input mr-20"
+                    type="date"
+                    value="2021-09-19"
+                  /><input class="cart__form-input" type="time" value="12:00" />
+                </div>
+                <div class="cart__form-row mb-20"></div>
+                <div class="cart__form-chk">
+                  <input
+                    class="cart__form-chk-input"
+                    type="checkbox"
+                    id="form-chk2"
+                  /><span class="cart__form-chk-span"></span>
+                </div>
+                <label class="cart__form-label" for="form-chk2"
+                  >Доставить как можно быстрее</label
+                >
+                <p class="cart__form-p">
+                  Ваш заказ прибудет сегодня через 60 - 80 минут после
+                  подтверждения заказа
+                </p>
+                <p class="cart__form-title">Способ оплаты</p>
+                <div class="cart-carousel swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide cart-carousel__item">
+                      <input
+                        class="cart-carousel__chk"
+                        type="radio"
+                        name="oplata"
+                        checked
+                      />
+                      <div class="cart-carousel__bg"></div>
+                      <svg
+                        width="33"
+                        height="33"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M32.4135 6.24098C31.986 5.73554 31.3872 5.42681 30.7274 5.3717L7.48846 3.43128C6.82859 3.37617 6.18702 3.58133 5.68152 4.00884C5.17808 4.43468 4.8698 5.03042 4.81295 5.687L4.34541 10.0734H2.47854C1.11188 10.0734 0 11.1853 0 12.5519V27.0991C0 28.4657 1.11188 29.5776 2.47854 29.5776H25.7984C27.1651 29.5776 28.277 28.4657 28.277 27.0991V24.7393L29.1045 24.8084C29.1743 24.8142 29.2437 24.8171 29.3126 24.8171C30.5867 24.8171 31.6728 23.8368 31.7807 22.5446L32.9912 8.04798C33.0463 7.38817 32.8411 6.74648 32.4135 6.24098ZM2.47854 11.3625H25.7984C26.4543 11.3625 26.988 11.8961 26.988 12.5519V13.8775H1.28906V12.5519C1.28906 11.8961 1.82266 11.3625 2.47854 11.3625ZM1.28906 15.1665H26.988V17.8406H1.28906V15.1665ZM25.7984 28.2886H2.47854C1.82266 28.2886 1.28906 27.755 1.28906 27.0991V19.1297H26.988V27.0991C26.988 27.755 26.4543 28.2886 25.7984 28.2886ZM31.7066 7.94066L30.4961 22.4373C30.4415 23.091 29.8653 23.5785 29.2118 23.5238L28.277 23.4457V12.5519C28.277 11.1853 27.1651 10.0734 25.7984 10.0734H5.64182L6.0955 5.81694C6.09602 5.81204 6.09647 5.80721 6.09686 5.80225C6.15145 5.14863 6.7274 4.66111 7.38121 4.71589L30.6202 6.65631C30.9369 6.68274 31.2243 6.83091 31.4294 7.07351C31.6346 7.31611 31.733 7.62401 31.7066 7.94066Z"
+                          />
+                          <path
+                            d="M24.2907 21.0459H18.0876C17.7317 21.0459 17.4431 21.3345 17.4431 21.6904V25.7374C17.4431 26.0933 17.7317 26.3819 18.0876 26.3819H24.2907C24.6467 26.3819 24.9353 26.0933 24.9353 25.7374V21.6904C24.9353 21.3345 24.6467 21.0459 24.2907 21.0459ZM23.6462 25.0928H18.7322V22.335H23.6462V25.0928Z"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="33" height="33" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p>Банковская карта</p>
+                    </div>
+                    <div class="swiper-slide cart-carousel__item">
+                      <input
+                        class="cart-carousel__chk"
+                        type="radio"
+                        name="oplata"
+                      />
+                      <div class="cart-carousel__bg"></div>
+                      <img src="images/google-pay.svg" alt="google-pay" />
+                      <p>Google Pay</p>
+                    </div>
+                    <div class="swiper-slide cart-carousel__item">
+                      <input
+                        class="cart-carousel__chk"
+                        type="radio"
+                        name="oplata"
+                      />
+                      <div class="cart-carousel__bg"></div>
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0)">
+                          <path
+                            d="M25.0001 21.6179L23.7266 20.855C23.3384 20.6228 22.8943 20.5002 22.442 20.5H20.5254C20.1331 20.4993 19.7425 20.5498 19.3631 20.6499L13.5887 22.2C12.9573 22.3743 12.4503 22.8445 12.2291 23.4609L7.14996 20.7131C6.73809 20.4788 6.25592 20.3992 5.79058 20.4885C5.61505 20.5195 5.44488 20.5754 5.28497 20.6545C4.92388 20.8274 4.62432 21.1067 4.42608 21.4546C4.25274 21.7576 4.16168 22.1006 4.16168 22.4495C4.15631 23.1619 4.53375 23.822 5.14996 24.179L14.253 29.6255C14.6485 29.8704 15.1041 30 15.5691 30H22.6141C22.9288 30.0003 23.2405 29.9407 23.533 29.825L25.0001 29.2456V30H30.0001V20H25.0001V21.6179ZM23.1656 28.895C22.9905 28.9641 22.8038 28.9998 22.6155 29H15.5691C15.2874 28.9998 15.0113 28.9204 14.7725 28.771L5.65704 23.3181C5.34722 23.1392 5.15753 22.8076 5.15997 22.45C5.1607 22.2747 5.20684 22.1023 5.294 21.95C5.39361 21.7773 5.54351 21.6389 5.72345 21.5535C5.80279 21.5149 5.88678 21.4876 5.97345 21.4724C6.03668 21.4607 6.10089 21.4546 6.1651 21.4546C6.33697 21.4541 6.50592 21.499 6.65509 21.5845L12.1627 24.5606C12.169 24.5911 12.169 24.6211 12.1771 24.6516C12.4139 25.5244 13.2056 26.1306 14.1102 26.1316C14.3885 26.1062 14.6641 26.0569 14.9341 25.9846L20.129 24.5945L19.8712 23.6284L14.6932 25.0125C14.4651 25.0649 14.171 25.125 14.1102 25.1301C13.6585 25.1309 13.2625 24.8291 13.1436 24.3936C13.1275 24.333 13.118 24.271 13.1146 24.2085C13.1146 24.2085 13.1107 24.0874 13.1146 24.0449C13.1526 23.6267 13.4456 23.2756 13.8502 23.1631L19.6221 21.6189C19.9168 21.54 20.2205 21.5 20.5254 21.5H22.442C22.7134 21.5 22.9798 21.5737 23.2125 21.7131L25.0001 22.7835V28.1699L23.1656 28.895ZM26.0001 21H29.0001V29H26.0001V21Z"
+                          />
+                          <path
+                            d="M20.6221 3.99977L17.9399 1.31789C17.0979 0.470966 15.9521 -0.00364378 14.7581 -0.000225807H8.47192C8.08398 0.000262475 7.70142 0.0908386 7.354 0.26369L6.2334 0.824237C6.00879 0.937274 5.75928 0.991229 5.50806 0.98122L5 0.963397V-0.000225807H0V10.9998H5V9.49977H5.8501L6.15259 9.69973C6.99902 10.2617 7.98462 10.5791 9 10.6162V16.9998H30V3.99977H20.6221ZM4 9.99977H1V0.999774H4V9.99977ZM6.70605 8.86769L6.1499 8.49977H5V1.96389L5.47144 1.98073C5.89014 1.99562 6.30566 1.90554 6.68042 1.71877L7.80005 1.15822C8.00854 1.05397 8.23877 0.999774 8.47192 0.999774H14.7581C15.6868 0.997089 16.5781 1.36623 17.2329 2.02468L19.208 3.99977H15.082L13.8684 2.7864L13.1616 3.49318L16.6936 7.02541C17.0859 7.41603 17.0872 8.0508 16.6965 8.44338C16.3057 8.83571 15.6709 8.83693 15.2786 8.44631L12.3286 5.49636L11.9785 5.7964C11.012 6.61721 9.59912 6.6382 8.6084 5.84621L8.3186 5.61135L7.68848 6.3882L7.98145 6.62575C8.28784 6.87062 8.63184 7.06447 9 7.19973V9.61574C8.18164 9.57936 7.38843 9.32082 6.70605 8.86769ZM13.8186 8.39968L14.573 9.15431C15.3562 9.9258 16.6135 9.92702 17.3979 9.15676C16.6641 10.2932 16.9536 11.8057 18.0554 12.5906C19.1572 13.3755 20.6814 13.155 21.5156 12.0904C22.3499 11.0254 22.1992 9.49269 21.1733 8.61086C20.1477 7.72902 18.6096 7.80983 17.6821 8.79421C18.0237 8.25783 18.0847 7.58937 17.8459 6.99977H24.5415C24.7566 8.25783 25.7419 9.24318 27 9.45827V11.5413C25.7419 11.7564 24.7566 12.7417 24.5415 13.9998H14.4585C14.2434 12.7417 13.2581 11.7564 12 11.5413V9.45827C12.7146 9.33791 13.3608 8.96169 13.8186 8.39968ZM18 10.4998C18 9.6714 18.6716 8.99977 19.5 8.99977C20.3284 8.99977 21 9.6714 21 10.4998C21 11.3281 20.3284 11.9998 19.5 11.9998C18.6716 11.9998 18 11.3281 18 10.4998ZM29 15.9998H10V7.4092C10.7927 7.46877 11.583 7.26662 12.25 6.83425L13.103 7.68727C12.7278 8.19704 12.1331 8.49855 11.5 8.49977H11V12.4998H11.5C12.6045 12.4998 13.5 13.3953 13.5 14.4998V14.9998H25.5V14.4998C25.5 13.3953 26.3955 12.4998 27.5 12.4998H28V8.49977H27.5C26.3955 8.49977 25.5 7.60427 25.5 6.49977V5.99977H17.082L16.082 4.99977H29V15.9998Z"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0">
+                            <rect width="30" height="30" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <p>Наличными</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="cart__form-title">Ваши данные</p>
+                <div class="cart__inputs">
+                  <input
+                    class="cart__form-input mr-20"
+                    type="tel"
+                    placeholder="Ваш номер телефона"
+                  /><input
+                    class="cart__form-input"
+                    type="email"
+                    placeholder="Ваш e-mail"
+                  />
+                </div>
+                <p class="cart__form-title">Контактные данные получателя</p>
+                <div class="cart__inputs cart__inputs_last">
+                  <input
+                    class="cart__form-input"
+                    type="text"
+                    placeholder="Фамилия"
+                  /><input
+                    class="cart__form-input"
+                    type="text"
+                    placeholder="Имя"
+                  /><input
+                    class="cart__form-input"
+                    type="text"
+                    placeholder="Отчество"
+                  />
+                </div>
+                <button class="btn cart__form-btn" type="button" anim="ripple">
+                  Заказать на сумму 25 699 ₽
+                </button>
+              </form>
+            </div>
+            <div class="cart__aside">
+              <div class="cart__aside-item">
+                <p class="cart__aside-title">Ваш заказ</p>
+                <div class="cart__aside-row border">
+                  <p class="cart__aside-text">Стоимость товаров</p>
+                  <p class="cart__aside-price">25500 ₽</p>
+                </div>
+                <div class="cart__aside-row">
+                  <p class="cart__aside-text">Доставка курьером</p>
+                  <p class="cart__aside-price">199 ₽</p>
+                </div>
+                <div class="cart__aside-row">
+                  <p class="cart__aside-text">Начислено бонусов</p>
+                  <p class="cart__aside-price">500 ₽</p>
+                </div>
+                <div class="cart__aside-row border mt-60">
+                  <p class="cart__aside-text">Оплата при получении</p>
+                </div>
+                <div class="cart__aside-row">
+                  <p class="cart__aside-text">Итого <span>2 товара</span></p>
+                  <p class="cart__aside-price">25699 ₽</p>
+                </div>
+                <button class="cart__aside-btn btn" type="button" anim="ripple">
+                  Оформить заказ
+                </button>
+                <p class="cart__aside-p">
+                  Нажимая на кнопку я соглашаюсь с правилами использования моих
+                  <a href="#!">персональных данных</a>
+                </p>
+              </div>
+              <div class="cart__aside-item cart__aside-item_row">
+                <p class="cart__aside-title">Промокод</p>
+                <a class="cart__aside-link" href="#!">Добавить </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__body container">
+          <div class="footer__row">
+            <div class="footer__left">
+              <ul class="footer__list">
+                <li class="footer__title">О нас</li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">О магазине</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Доставка</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Оплата</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Гарантии</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Новости</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Отзывы</a>
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__title">Клиентам</li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Контакты</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Помощь</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Корпоративным клиентам</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Оформление заказа</a>
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__title">Другое</li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Личный кабинет</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Каталог</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Живая лента</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Понравишееся</a>
+                </li>
+                <li class="footer__li">
+                  <a class="footer__link" href="#!">Фотографии</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__right">
+              <p class="footer__title">Контакты</p>
+              <a class="footer__right-link" href="tel:+79000000000">
+                <i class="fas fa-phone-alt"> </i>
+                <p>+7 (900) 000-00-00</p></a
+              >
+              <p class="footer__p">Время работы: пн-вс с 10:00 до 19:00</p>
+              <a class="footer__right-link" href="#!">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>г. Москва, ул. Улица, д. 1</p></a
+              ><a class="footer__right-link" href="mailto:something@gmail.com">
+                <i class="fal fa-envelope"></i>
+                <p>something@gmail.com</p></a
+              >
+              <div class="footer__icons">
+                <a
+                  class="footer__icons-link fab fa-odnoklassniki-square"
+                  href="https://ok.ru/"
+                  target="_blank"
+                ></a
+                ><a
+                  class="footer__icons-link fab fa-facebook-square"
+                  href="https://facebook.com/"
+                  target="_blank"
+                ></a
+                ><a
+                  class="footer__icons-link fab fa-instagram-square"
+                  href="https://instagram.com/"
+                  target="_blank"
+                ></a
+                ><a
+                  class="footer__icons-link fab fa-youtube-square"
+                  href="https://youtube.com/"
+                  target="_blank"
+                ></a
+                ><a
+                  class="footer__icons-link fab fa-twitter-square"
+                  href="https://twitter.com/"
+                  target="_blank"
+                ></a
+                ><a
+                  class="footer__icons-link fab fa-pinterest-square"
+                  href="https://pinterest.com/"
+                  target="_blank"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-item">
+              <i class="fal fa-copyright"> </i>
+              <p>Все права защищены. Rukkola 2021</p>
+            </div>
+            <a class="footer__bottom-link" href="#!"
+              >Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>

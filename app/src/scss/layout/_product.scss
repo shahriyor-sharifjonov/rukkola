@@ -62,7 +62,6 @@
         align-items: stretch;
         flex-wrap: wrap;
     }
-
     .product{
         display: flex;
         flex-direction: column;
@@ -76,7 +75,6 @@
         background: #fff;
         transform: scale(1);
         position: relative;
-
         @include media(992){
             width: calc(50% - 10px);
             margin: 0 0 20px 0;
@@ -85,34 +83,25 @@
                 margin-right: 10px;
             }
         }
-
         @media(hover: hover){
-
             &:hover{
-                
                 @media (min-width: 992px){
                     box-shadow: 0px 5px 10px 0px #DDDDDD;
                     transform: scale(1.05);
                     z-index: 1;
-                    
                     .product__preview-btn{
                         opacity: 1;
                         visibility: visible;  
                     }
-
                     .product__hidden{
                         display: flex;
                         opacity: 1;
                         visibility: visible;  
                         box-shadow: 0px 5px 10px 0px #DDDDDD;
                     }
-
                 }
-
             }
-
         }
-
         &_new{
             position: relative; 
             &::before{
@@ -131,40 +120,36 @@
               align-items: center;
               justify-content: center;
               color: #FFFFFF;
-
               @include media(768){
                     top: 12px;
                     left: 12px;
-              }
+                }
             }
         }
-
         &_stock{
             position: relative; 
             &::before{
-              content: 'Акция';
-              position: absolute;
-              top: 28px;
-              left: 30px;  
-              width: 100px;
-              height: 30px;
-              background: #E12626;
-              border-radius: 5px;
-              font-weight: 500;
-              font-size: 14px;
-              line-height: 17px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: #FFFFFF;
-
-              @include media(768){
+                content: 'Акция';
+                position: absolute;
+                top: 28px;
+                left: 30px;  
+                width: 100px;
+                height: 30px;
+                background: #E12626;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFFFFF;
+                @include media(768){
                     top: 12px;
                     left: 12px;
-              }
+                }
             }
         }
-
         &__thumbnail{
             display: flex;
             flex-direction: column;
@@ -174,11 +159,9 @@
             aspect-ratio: 1/1;
             position: relative;
             overflow: hidden;
-
             @include media(992){
               border-radius: 10px;
             }
-
             &-img{
                 position: absolute;
                 object-position: center;
@@ -190,9 +173,7 @@
                 object-fit: cover;
                 z-index: -1;
             }
-
         }
-
         &__preview-btn{
             margin: 0 auto 20px auto;
             background: #FFFFFF;
@@ -206,17 +187,14 @@
             opacity: 0;
             visibility: hidden;  
             transition:  200ms ease-in-out;
-
             @include media(1200){
                 font-size: 12px;
                 line-height: 15px;
                 padding: 10px 20px;
             }
         }
-
         &__content{
             width: 100%;
-
             &-header{
                 padding: 20px 0 0 0;
                 width: 100%;
@@ -225,25 +203,20 @@
                 align-items: flex-start;
                 position: relative;
             }
-
         }
-
         &__title{
             width: 100%;
             font-size: 16px;
             line-height: 20px;
-            color: #343434;            
-
+            color: #343434;
             @include media(1200){
                 font-size: 12px;
                 line-height: 15px;
             }
         }
-
         &__heart{
             font-size: 25px;
             color: #343434;
-
             @include media(992){
                 position: absolute;
                 width: 35px;
@@ -255,22 +228,18 @@
                 border-radius: 10px 0 0 0;
             }
         }
-
         &__stars{
             display: flex;
             justify-content: flex-start;
             align-items: center;
             margin-bottom: 25px;
-
             @include media(992){
                 display: none;
             }
-
             &-img{
                 margin-right: 20px;
                 height: 12px;
             }
-
             &-p{
                 font-weight: 400;
                 font-size: 12px;
@@ -278,59 +247,46 @@
                 color: #343434;
             }
         }
-
         &__price{
             display: flex;
             align-items: flex-end;
             justify-content: flex-start;
-
             @include media(992){
                 margin-top: 10px;
             }
-
             &-p{
                 font-weight: 600;
                 font-size: 20px;
                 line-height: 24px;
                 color: #343434;
                 margin-right: 12px;
-
                 @include media(768){
                     font-size: 16px;
                     line-height: 20px;
                 }
             }
-
             &-text{
                 font-size: 12px;
                 line-height: 15px;
                 color: #C8C8C8;   
-
                 @include media(1200){
                   display: none;
                 }
-                
                 &_line{
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 22px;
                     text-decoration-line: line-through;
-
                     @include media(1200){
                         display: block;
                       }
-
                       @include media(768){
                         font-size: 16px;
                         line-height: 20px;
                     }
-
                 }
-
             }
-
         }
-
         &__hidden{
             display: flex;
             flex-direction: column;
@@ -351,12 +307,10 @@
             padding: 0 20px  0 20px;
             border-radius: 0 0 10px 10px;
         }
-
         &__btn{
             height: 45px;
             margin-bottom: 15px;
         }
-
         &__link{
             font-size: 14px;
             line-height: 17px;
@@ -365,7 +319,5 @@
             color: #76A135;  
             margin: 0 auto 0 auto;          
         }
-
     }
-
 }

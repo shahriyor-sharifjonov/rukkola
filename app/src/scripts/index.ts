@@ -1,20 +1,20 @@
 // Header Menu
-const headerButton: HTMLButtonElement = document.querySelector(".header__button");
-const headerMenu: HTMLUListElement = document.querySelector(".header__mob-menu");
-const body :HTMLElement = document.querySelector('body');
+const headerButton: HTMLButtonElement =
+  document.querySelector(".header__button");
+const headerMenu: HTMLUListElement =
+  document.querySelector(".header__mob-menu");
+const body: HTMLElement = document.querySelector("body");
 let menuOpened = false;
 const menuToggle = () => {
   menuOpened = !menuOpened;
   headerButton.classList.toggle("open");
   headerMenu.classList.toggle("open");
-  checkMenu()
+  checkMenu();
 };
 
-function checkMenu(){
-  if (menuOpened) 
-    body.classList.add('overflow-hidden'); 
-  else 
-    body.classList.remove('overflow-hidden');
+function checkMenu() {
+  if (menuOpened) body.classList.add("overflow-hidden");
+  else body.classList.remove("overflow-hidden");
 }
 headerButton.onclick = menuToggle;
 
@@ -27,50 +27,56 @@ window.onclick = (e: MouseEvent) => {
     menuToggle();
 };
 
-[].map.call(document.querySelectorAll('[anim="ripple"]'), el=> {
-  el.addEventListener('click',e => {
-      e = e.touches ? e.touches[0] : e;
-      const r = el.getBoundingClientRect(), d = Math.sqrt(Math.pow(r.width,2)+Math.pow(r.height,2)) * 2;
-      el.style.cssText = `--s: 0; --o: 1;`;  el.offsetTop; 
-      el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${e.clientX - r.left}; --y:${e.clientY - r.top};`
-  })
-})
+[].map.call(document.querySelectorAll('[anim="ripple"]'), (el) => {
+  el.addEventListener("click", (e) => {
+    e = e.touches ? e.touches[0] : e;
+    const r = el.getBoundingClientRect(),
+      d = Math.sqrt(Math.pow(r.width, 2) + Math.pow(r.height, 2)) * 2;
+    el.style.cssText = `--s: 0; --o: 1;`;
+    el.offsetTop;
+    el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${
+      e.clientX - r.left
+    }; --y:${e.clientY - r.top};`;
+  });
+});
 
-function openDrop(el){
-  el.classList.toggle('active')
+function openDrop(el) {
+  el.classList.toggle("active");
 }
 
-window.addEventListener('click', function(e:any){
-  if(e.target.classList.contains('header__location-li')){
-    this.document.querySelector('.header__location-btn').classList.remove('active')
+window.addEventListener("click", function (e: any) {
+  if (e.target.classList.contains("header__location-li")) {
+    this.document
+      .querySelector(".header__location-btn")
+      .classList.remove("active");
   }
-})
+});
 
 var swiper = new Swiper(".header-carousel", {
   slidesPerView: "auto",
   spaceBetween: 0,
-  freeMode: 'true',
+  freeMode: "true",
   pagination: {
-    clickable: true
-  }
+    clickable: true,
+  },
 });
 
 var swiper4 = new Swiper(".cart-carousel", {
   slidesPerView: "auto",
   spaceBetween: 0,
   pagination: {
-    clickable: true
-  }
+    clickable: true,
+  },
 });
 
-var stickyOffset = $('.sticky').offset().top;
+var stickyOffset = $(".sticky").offset().top;
 
-$(window).scroll(function(){
-  var sticky = $('.sticky'),
-      scroll = $(window).scrollTop();
+$(window).scroll(function () {
+  var sticky = $(".sticky"),
+    scroll = $(window).scrollTop();
 
-  if (scroll >= stickyOffset) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
+  if (scroll >= stickyOffset) sticky.addClass("fixed");
+  else sticky.removeClass("fixed");
 });
 
 var swiper2 = new Swiper(".carousel__main", {
@@ -104,7 +110,6 @@ var swiper5 = new Swiper(".main-carousel", {
   },
 });
 
-
 var swiper6 = new Swiper(".reviews-carousel", {
   slidesPerView: "auto",
   spaceBetween: 30,
@@ -112,8 +117,8 @@ var swiper6 = new Swiper(".reviews-carousel", {
   breakpoints: {
     1400: {
       slidesPerView: 3,
-    }
-  }
+    },
+  },
 });
 
 var swiper6 = new Swiper(".news__carousel", {
@@ -123,43 +128,34 @@ var swiper6 = new Swiper(".news__carousel", {
   breakpoints: {
     1400: {
       slidesPerView: 3,
-    }
-  }
+    },
+  },
 });
 
-
-$(document).ready(function() {
-  $(".accordeon__item > button").on("click", function() {
+$(document).ready(function () {
+  $(".accordeon__item > button").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      $(this)
-        .siblings(".accordeon__content ")
-        .slideUp(200);
+      $(this).siblings(".accordeon__content ").slideUp(200);
     } else {
       $(".accordeon__item > button").removeClass("active");
       $(this).addClass("active");
       $(".accordeon__content ").slideUp(200);
-      $(this)
-        .siblings(".accordeon__content ")
-        .slideDown(200);
+      $(this).siblings(".accordeon__content ").slideDown(200);
     }
   });
 });
 
-$(document).ready(function() {
-  $(".orders-item > .orders-item__header").on("click", function() {
+$(document).ready(function () {
+  $(".orders-item > .orders-item__header").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
-      $(this)
-        .siblings(".orders-item__content")
-        .slideUp(200);
+      $(this).siblings(".orders-item__content").slideUp(200);
     } else {
       $(".orders-item > .orders-item__header").removeClass("active");
       $(this).addClass("active");
       $(".orders-item__content").slideUp(200);
-      $(this)
-        .siblings(".orders-item__content")
-        .slideDown(200);
+      $(this).siblings(".orders-item__content").slideDown(200);
     }
   });
 });
