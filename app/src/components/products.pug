@@ -1,10 +1,115 @@
+mixin quick-view()
+    .quick-view 
+        .quick-view__body 
+            button(type="button" onclick="closeQuickView()").quick-view__close
+                svg(width='19' height='19' viewbox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+                    path(d='M18.6597 15.9014L12.2534 9.47076L18.6743 3.12311C18.938 2.85944 18.938 2.42975 18.6743 2.16608L16.8481 0.330139C16.7212 0.203186 16.5503 0.134827 16.3696 0.134827C16.189 0.134827 16.0181 0.208069 15.8911 0.330139L9.49951 6.65826L3.09814 0.335022C2.97119 0.208069 2.80029 0.13971 2.61963 0.13971C2.43896 0.13971 2.26807 0.212952 2.14111 0.335022L0.319824 2.17096C0.0561524 2.43463 0.0561524 2.86432 0.319824 3.12799L6.74072 9.47565L0.339356 15.9014C0.212402 16.0284 0.13916 16.1993 0.13916 16.3799C0.13916 16.5606 0.20752 16.7315 0.339356 16.8585L2.16553 18.6944C2.29736 18.8262 2.46826 18.8946 2.64404 18.8946C2.81494 18.8946 2.99072 18.8311 3.12256 18.6944L9.49951 12.2881L15.8813 18.6895C16.0132 18.8214 16.1841 18.8897 16.3599 18.8897C16.5308 18.8897 16.7065 18.8262 16.8384 18.6895L18.6646 16.8536C18.7915 16.7266 18.8647 16.5557 18.8647 16.3751C18.8599 16.1993 18.7866 16.0284 18.6597 15.9014Z' fill='black')
+            .product-page
+                .wrap.container 
+                    .carousel
+                        .carousel__thumb.swiper(thumbsSlider="")
+                            .swiper-wrapper 
+                                .swiper-slide
+                                    img(src="images/slider-1.png", alt="")
+                                .swiper-slide
+                                    img(src="images/slider-2.png", alt="")
+                                .swiper-slide
+                                    img(src="images/slider-3.png", alt="")
+                                .swiper-slide
+                                    img(src="images/slider-4.png", alt="")
+                            .swiper-pagination.carousel__thumb-pagination 
+                        .carousel__main.swiper
+                            .swiper-wrapper 
+                                .swiper-slide
+                                    img(src="images/slider-1.png", alt="")
+                                .swiper-slide
+                                    img(src="images/slider-2.png", alt="")
+                                .swiper-slide
+                                    img(src="images/slider-3.png", alt="")
+                                .swiper-slide
+                                    img(src="images/slider-4.png", alt="")
+                    .content 
+                        h2.title Букет «101 тюльпан»
+                        .row 
+                            .stars
+                                img(src="images/stars.svg", alt="stars").stars__img
+                                p.stars__p 4.9
+                            a(href="reviews.html").reviews-text 42 отзыва
+                        p.desc Букет ярких тюльпанов будет отличным подарком как на праздник, так и просто порадовать девушку
+                        form(action="").form
+                            .form__widget
+                                p.form__title Размер букета: 
+                                .form__items 
+                                    .form__item 
+                                        input(type="radio", name="size").form__item-chk
+                                        .form__item-content 30х30
+                                    .form__item 
+                                        input(type="radio", name="size" checked).form__item-chk
+                                        .form__item-content 40х40
+                                    .form__item 
+                                        input(type="radio", name="size").form__item-chk
+                                        .form__item-content 50х50
+                            .form__widget
+                                p.form__title Состав букета:
+                                p.form__text 50 красных тюльпанов
+                                p.form__text 51 белых тюльпанов 
+                                p.form__text Картоная упаковка + ленточка
+                                p.form__text Зелень
+                            .form__widget
+                                p.form__title Оформление заказа
+                                p.form__subtitle Высота тюльпанов:
+                                .form__items 
+                                    .form__item 
+                                        input(type="radio", name="sizesm").form__item-chk
+                                        .form__item-content 30 см
+                                    .form__item 
+                                        input(type="radio", name="sizesm" checked).form__item-chk
+                                        .form__item-content 50 см
+                                    .form__item 
+                                        input(type="radio", name="sizesm").form__item-chk
+                                        .form__item-content 60 см
+                            .form__widget
+                                p.form__subtitle Упаковка:
+                                .form__items 
+                                    .form__item 
+                                        input(type="radio", name="package" checked).form__item-chk
+                                        .form__item-content Ленточка
+                                    .form__item 
+                                        input(type="radio", name="package").form__item-chk
+                                        .form__item-content Крафт (290₽)
+                                    .form__item 
+                                        input(type="radio", name="package").form__item-chk
+                                        .form__item-content Корейская (390₽) 
+                                    .form__item 
+                                        input(type="radio", name="package").form__item-chk
+                                        .form__item-content Премиум (490₽)
+                                    .form__item 
+                                        input(type="radio", name="package").form__item-chk
+                                        .form__item-content Корзинка (1000₽)
+                            .form__widget
+                                p.form__subtitle Дополнительная зелень:
+                                .form__items 
+                                    .form__item 
+                                        input(type="radio", name="dop").form__item-chk
+                                        .form__item-content Нет
+                                    .form__item 
+                                        input(type="radio", name="dop" checked).form__item-chk
+                                        .form__item-content Да (200₽)
+                            .form__footer 
+                                p.form__price 7 900 ₽
+                                .form__btns 
+                                    button(type='submit' anim='ripple').btn.form__btn Добавить в корзину
+                                    button(type='submit' anim='ripple').form__btn.pending Купить в 1 клик
+                                    button(type='button').form__btn.fal.fa-heart.heart
+
+
 mixin products()
     .products
         .wrap.container
             .product.product_new    
                 .product__thumbnail     
                     img(src="images/product-1.png", alt="Букет «101 тюльпан»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «101 тюльпан»
@@ -21,7 +126,7 @@ mixin products()
             .product.product_stock 
                 .product__thumbnail     
                     img(src="images/product-2.png", alt="Букет «Весна»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Весна»
@@ -38,7 +143,7 @@ mixin products()
             .product.product_new 
                 .product__thumbnail     
                     img(src="images/product-3.png", alt="Букет «Так и быть»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Так и быть»
@@ -55,7 +160,7 @@ mixin products()
             .product
                 .product__thumbnail     
                     img(src="images/product-4.png", alt="Букет «Краски весны»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Краски весны»
@@ -72,7 +177,7 @@ mixin products()
             .product
                 .product__thumbnail     
                     img(src="images/product-3.png", alt="Букет «Так и быть»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Так и быть»
@@ -89,7 +194,7 @@ mixin products()
             .product
                 .product__thumbnail     
                     img(src="images/product-4.png", alt="Букет «Краски весны»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Краски весны»
@@ -106,7 +211,7 @@ mixin products()
             .product
                 .product__thumbnail     
                     img(src="images/product-3.png", alt="Букет «Так и быть»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Так и быть»
@@ -123,7 +228,7 @@ mixin products()
             .product
                 .product__thumbnail     
                     img(src="images/product-4.png", alt="Букет «Краски весны»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Краски весны»
@@ -137,6 +242,7 @@ mixin products()
                 .product__hidden 
                     button(type='button' anim='ripple').btn.product__btn В корзину
                     a(href="cart.html").product__link Купить в 1 клик 
+    +quick-view
 
 mixin products2()
     .products.products-carousel
@@ -149,7 +255,7 @@ mixin products2()
             .product  
                 .product__thumbnail     
                     img(src="images/product-1.png", alt="Букет «101 тюльпан»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «101 тюльпан»
@@ -166,7 +272,7 @@ mixin products2()
             .product.product_new
                 .product__thumbnail     
                     img(src="images/product-2.png", alt="Букет «Весна»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Весна»
@@ -183,7 +289,7 @@ mixin products2()
             .product
                 .product__thumbnail     
                     img(src="images/product-3.png", alt="Букет «Так и быть»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Так и быть»
@@ -200,7 +306,7 @@ mixin products2()
             .product
                 .product__thumbnail     
                     img(src="images/product-4.png", alt="Букет «Краски весны»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Краски весны»
@@ -214,6 +320,7 @@ mixin products2()
                 .product__hidden 
                     button(type='button' anim='ripple').btn.product__btn В корзину
                     a(href="cart.html").product__link Купить в 1 клик 
+    +quick-view
 
 mixin products3()
     .products.products-carousel.products-carousel_2
@@ -226,7 +333,7 @@ mixin products3()
             .product  
                 .product__thumbnail     
                     img(src="images/product-1.png", alt="Букет «101 тюльпан»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «101 тюльпан»
@@ -243,7 +350,7 @@ mixin products3()
             .product.product_new
                 .product__thumbnail     
                     img(src="images/product-2.png", alt="Букет «Весна»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Весна»
@@ -260,7 +367,7 @@ mixin products3()
             .product
                 .product__thumbnail     
                     img(src="images/product-3.png", alt="Букет «Так и быть»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Так и быть»
@@ -277,7 +384,7 @@ mixin products3()
             .product
                 .product__thumbnail     
                     img(src="images/product-4.png", alt="Букет «Краски весны»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Краски весны»
@@ -294,7 +401,7 @@ mixin products3()
             .product  
                 .product__thumbnail     
                     img(src="images/product-1.png", alt="Букет «101 тюльпан»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «101 тюльпан»
@@ -311,7 +418,7 @@ mixin products3()
             .product.product_new
                 .product__thumbnail     
                     img(src="images/product-2.png", alt="Букет «Весна»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Весна»
@@ -328,7 +435,7 @@ mixin products3()
             .product
                 .product__thumbnail     
                     img(src="images/product-3.png", alt="Букет «Так и быть»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Так и быть»
@@ -345,7 +452,7 @@ mixin products3()
             .product
                 .product__thumbnail     
                     img(src="images/product-4.png", alt="Букет «Краски весны»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Краски весны»
@@ -359,6 +466,7 @@ mixin products3()
                 .product__hidden 
                     button(type='button' anim='ripple').btn.product__btn В корзину
                     a(href="cart.html").product__link Купить в 1 клик 
+    +quick-view
 
 
 mixin products4()
@@ -372,7 +480,7 @@ mixin products4()
             .product  
                 .product__thumbnail     
                     img(src="images/product-1.png", alt="Букет «101 тюльпан»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «101 тюльпан»
@@ -389,7 +497,7 @@ mixin products4()
             .product.product_new
                 .product__thumbnail     
                     img(src="images/product-2.png", alt="Букет «Весна»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Весна»
@@ -406,7 +514,7 @@ mixin products4()
             .product
                 .product__thumbnail     
                     img(src="images/product-3.png", alt="Букет «Так и быть»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Так и быть»
@@ -423,7 +531,7 @@ mixin products4()
             .product
                 .product__thumbnail     
                     img(src="images/product-4.png", alt="Букет «Краски весны»").product__thumbnail-img
-                    a(href="product.html").product__preview-btn Быстрый просмотр 
+                    button(type="button" onclick="openQuickView()").product__preview-btn Быстрый просмотр 
                 .product__content 
                     .product__content-header
                         a(href="product.html").product__title Букет «Краски весны»
@@ -437,6 +545,7 @@ mixin products4()
                 .product__hidden 
                     button(type='button' anim='ripple').btn.product__btn В корзину
                     a(href="cart.html").product__link Купить в 1 клик 
+    +quick-view
 
 
 mixin reviews()
@@ -537,3 +646,7 @@ mixin news()
                         img(src="images/news-3.png", alt="").news__carousel-img
                         p.news__carousel-desc О нас
                         p.news__carousel-title Розыгрыш на доставку бесплатного букета завершился
+
+
+
+

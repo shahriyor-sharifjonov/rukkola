@@ -1,3 +1,25 @@
+// Quick View Popup
+// Open
+function openQuickView() {
+    const quickView = document.querySelector(".quick-view");
+    const body = document.querySelector('body')
+    quickView.classList.add('active')
+    body.style.overflow = "hidden"
+}
+// Close
+function closeQuickView(){
+    const quickView = document.querySelector(".quick-view");
+    const body = document.querySelector('body')
+    quickView.classList.remove('active')
+    body.style.overflow = "auto"
+}
+window.addEventListener('click', function(e: any){
+    if(e.target.classList.contains('quick-view')){  
+        e.target.classList.remove('active')
+    }
+})
+
+
 // Header Menu
 const headerButton: HTMLButtonElement =
   document.querySelector(".header__button");
