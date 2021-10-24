@@ -119,15 +119,12 @@ html(lang="en")
                             .delivery   
                                 h2.delivery__title Доставка и оплата
                                 p.delivery__p Круглосуточно и недорого (По Москве 300 руб. в дневное время в пределах 3 часов) доставляем букеты по Москве и Московской области. У нас свежие цветы, цены ниже средних и пунктуальные курьеры— на наш взгляд, лучший набор качеств для службы доставки цветов.<br><br>
-                                p.delivery__p Доставка ночью +200 руб.
-                                p.delivery__p К точному времени +600 руб. (например к 16:00)
-                                p.delivery__p Самовывоз - бесплатно.
-                                p.delivery__p Минимальная сумма заказа на сайте — 1200 рублей
+                                p.delivery__p Доставка ночью +200 руб.<br>К точному времени +600 руб. (например к 16:00)<br>Самовывоз - бесплатно.<br>Минимальная сумма заказа на сайте — 1200 рублей<>
                                 h2.delivery__title Куда доставляем
                                 .delivery__map 
                                     img(src="images/map.png", alt="").delivery__map-content
                             .leads 
-                                h2.leads__title 
+                                h2.leads__title.delivery__title Наши основные преимущества
                                 .leads__content 
                                     .leads__item 
                                         img(src="images/leads-1.svg", alt="").leads__item-img
@@ -155,17 +152,88 @@ html(lang="en")
                                         p.leads__item-p Защита личной информации и платежей
                             .benefits 
                                 .benefits__item 
-                                    p.benefits__title Удобная доставка и оплата
-                                    p.benefits__p И конечно, любой товар можно заказать с доставкой. Мы доставляем по Москве в течение одного дня. Всё — без предоплаты. Оплата наличная или безналичная — как вам удобнее
+                                    p.benefits__title.delivery__title Удобная доставка и оплата
+                                    p.benefits__p.delivery__p  И конечно, любой товар можно заказать с доставкой. Мы доставляем по Москве в течение одного дня. Всё — без предоплаты. Оплата наличная или безналичная — как вам удобнее
                                     a(href="#!").benefits__link Подробнее
-                                        img(src="images/", alt="") 
+                                        img(src="images/right.svg", alt="") 
                                 .benefits__item 
-                                    p.benefits__title Срочная доставка
-                                    p.benefits__p Цветы нужны в ближайшее время? Доставляем от 45 минут (в зависимости от адреса). Срочная доставка согласовывается с менеджером
+                                    p.benefits__title.delivery__title Срочная доставка
+                                    p.benefits__p.delivery__p  Цветы нужны в ближайшее время? Доставляем от 45 минут (в зависимости от адреса). Срочная доставка согласовывается с менеджером
                                 .benefits__item 
-                                    p.benefits__title Оплата
-                                    p.benefits__p Мы предлагаем 10 способов оплаты, чтобы вам было удобно заказывать цветы. Букет можно оплатить как наличными курьеру, так и онлайн на сайте
+                                    p.benefits__title.delivery__title Оплата
+                                    p.benefits__p.delivery__p  Мы предлагаем 10 способов оплаты, чтобы вам было удобно заказывать цветы. Букет можно оплатить как наличными курьеру, так и онлайн на сайте
                             
+                            
+                            
+                            .quest
+                                p.quest__desc Вопрос-ответ
+                                p.quest__title.delivery__title Часто задаваемые вопросы
+                                .quest__item    
+                                    .quest__item-btn Как производится оплата?
+                                        img(src="images/quest.svg", alt="").quest__item-btn-arrow
+                                    .quest__item-content 
+                                        p.quest__item-p Оплата производится любым удобным для вас способом. Будь-то наличные, банковской картой, безналичным рассчетом. Работаем, чтобы вам было удобно
+                                .quest__item    
+                                    .quest__item-btn Какие есть способы оплаты?
+                                        img(src="images/quest.svg", alt="").quest__item-btn-arrow
+                                    .quest__item-content 
+                                        p.quest__item-p Оплата производится любым удобным для вас способом. Будь-то наличные, банковской картой, безналичным рассчетом. Работаем, чтобы вам было удобно
+                                .quest__item    
+                                    .quest__item-btn Проводится ли уборка или вывоз мусора?
+                                        img(src="images/quest.svg", alt="").quest__item-btn-arrow
+                                    .quest__item-content 
+                                        p.quest__item-p Оплата производится любым удобным для вас способом. Будь-то наличные, банковской картой, безналичным рассчетом. Работаем, чтобы вам было удобно
+                                .quest__item    
+                                    .quest__item-btn Кто закупает отделочные материалы
+                                        img(src="images/quest.svg", alt="").quest__item-btn-arrow
+                                    .quest__item-content 
+                                        p.quest__item-p Оплата производится любым удобным для вас способом. Будь-то наличные, банковской картой, безналичным рассчетом. Работаем, чтобы вам было удобно
+
+                            .cards 
+                                h2.cards__title.delivery__title 1. Банковские карты
+                                .cards__row 
+                                    .cards__item.cards__item_abs 
+                                        .cards__item-num 1234 0000 000 000
+                                        .cards__item-num 24/12
+                                        img(src="images/visa.png", alt="")
+                                    .cards__item.cards__item_abs 
+                                        .cards__item-num 1234 0000 000 000
+                                        .cards__item-num 24/12
+                                        img(src="images/mastercard.png", alt="")
+                            .cards 
+                                h2.cards__title.delivery__title 2. Интернет-банк
+                                .cards__row     
+                                    .cards__item
+                                        img(src="images/sberbank.png", alt="")
+                                    .cards__item
+                                        img(src="images/alfabank.png", alt="")
+                                    .cards__item
+                                        img(src="images/tinkoff.png", alt="")
+                            .cards 
+                                h2.cards__title.delivery__title 3. Электроные кошельки
+                                .cards__row     
+                                    .cards__item
+                                        img(src="images/qiwi.png", alt="")
+                                    .cards__item
+                                        img(src="images/webmoney.png", alt="")
+                                    .cards__item
+                                        img(src="images/paypal.png", alt="")
+                                    .cards__item
+                                        img(src="images/dengi.png", alt="")
+                                    .cards__item
+                                        img(src="images/yumoney.png", alt="")
+                            .cards 
+                                h2.cards__title.delivery__title 4. Наличные
+                                .cards__row     
+                                    .cards__item
+                                        p.cards__item-p Курьеру при получении букета
+                                    .cards__item
+                                        p.cards__item-p Через любой удобный терминал
+
+
+
+
+
             include components/footer.pug 
             +footer 
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
