@@ -27,6 +27,12 @@
         column-gap: 40px;
         margin-bottom: 15px;
 
+        &.bor{
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
         @include media(768){
             column-gap: 20px;
         }
