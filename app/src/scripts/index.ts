@@ -182,16 +182,3 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".quest__item > .quest__item-btn").on("click", function () {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this).siblings(".quest__item-content").slideUp(200);
-    } else {
-      $(".quest__item > .quest__item-btn").removeClass("active");
-      $(this).addClass("active");
-      $(".quest__item-content").slideUp(200);
-      $(this).siblings(".quest__item-content").slideDown(200);
-    }
-  });
-});
