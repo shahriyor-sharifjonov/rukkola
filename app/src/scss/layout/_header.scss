@@ -434,6 +434,10 @@
                 &:hover {
                     background: #fff;
 
+                    .filter__btn i{
+                        transform: rotate(-180deg);
+                    }
+
                     .header-carousel__content {
                         display: flex;
                     }
